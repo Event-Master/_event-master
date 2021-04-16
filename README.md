@@ -11,7 +11,7 @@ Table of Contents |-
 [User Stories](User-Stories.md) | -
 [Software Requirements](requirements.md) | -
 [Setup](Setup.md) | -
-[Whiteboard](README-assets/eventMaster-data-flow.jpg) | -
+[Whiteboard](README-assets/eventMaster-whiteboard.jpg) | -
 [Entity Relationship Diagram](README-assets/event-Master-entity-relationship.jpg) | -
 
 ## Conflict Plan
