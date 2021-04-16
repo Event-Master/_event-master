@@ -13,3 +13,5 @@ Organizations, teams, families and students need an efficient and responsive mod
 ### How to auto-compile sass code 
 
 From the root directory run `mvn sass:watch`
+
+[Back to README](README.md)
