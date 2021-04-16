@@ -37,7 +37,7 @@ MVP will consist of a webpage that greets the user with a sign-in screen and aft
 
 ## Data Flow
 
-![Data-Flow](preWork-assets/eventMaster-data-flow.jpg)
+![Data-Flow](README-assets/eventMaster-data-flow.jpg)
 
 ## Non-Functional Requirements
 
