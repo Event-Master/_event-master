@@ -5,19 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<header th:replace="./fragments/header :: header"></header>
+    <header th:replace="./fragments/header :: header"></header>
 
-<h1>Signup</h1>
-<form action="/login" method="POST">
-    <label for="username">Username</label>
-    <input id="username" type="text" name="username">
+    <h1>Signup</h1>
+    <form action="/login" method="POST">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
 
-    <label for="password">Password</label>
-    <input id="password" type="text" name="password">
+        <label for="password">Password</label>
+        <input id="password" type="text" name="password">
 
-    <input type="submit" value="signup">
-</form>
+        <input type="submit" value="signup">
+    </form>
 
-<footer th:replace="./fragments/footer :: footer"></footer>
+    <footer th:replace="./fragments/footer :: footer"></footer>
 </body>
 </html>
