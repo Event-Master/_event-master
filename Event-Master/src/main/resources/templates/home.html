@@ -8,9 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-<header th:replace="./fragments/header :: header"></header>
+    <header th:replace="./fragments/header :: header"></header>
 
+    <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
+    <form action="/calendar" method="POST">
+        <label for="username"></label>
+        <input  id="username" type="text" name="username">
 
-<footer th:replace="./fragments/footer :: footer"></footer>
+        <label for="password"></label>
+        <input  id="password" type="text" name="password">
+
+        <input type="submit" value="login">
+    </form>
+
+    <form for="create-account" method="get" action="/signup">
+        <button type="submit">Create Account</button>
+    </form>
+
+    <footer th:replace="./fragments/footer :: footer"></footer>
 </body>
 </html>
