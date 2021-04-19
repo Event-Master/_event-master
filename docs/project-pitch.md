@@ -1,14 +1,13 @@
 **Task Management System (TMS)**
 
-- What problem or pain point does it solve? 
-Organizations, teams, families and students need an efficient and responsive model for collaboration on tasks,events, assignments, projects and objectives. The ability to coordinate tasks in real time while constantly updating members with ongoing changes. 
+- What problem or pain point does it solve? Kids don't like doing anything for free. This includes cleaning up after themselves, completeing hosehold chores or doing their homework. This planning tool, designed with parents in mind  provides incentives as well as the ability to delegate and accept tasks with **potentially** monetary reward. 
 
 
 **Minimum Viable Product (MVP) definition**
 
 - What is the minimum required for you to present on your demo day?
-Ability for organizations to login and for users to be tied to specific organizations and view events specfic to them. Monthly view fully functional with the exception of drag/drop, sms/email notifications.Editing event automatically adjusts position on calendar. Two tiers of users: admin and basic. 
 
+Ability for aministrative users to create accounts/login and for non-administrative users under their organizational chain to be tied view tasks/events specific to them. Those users should be able to request tasks be assigned them, complete those tasks once assign, and be awarded points towards their target. Monthly view fully functional with the drag/drop functionality. Editing event automatically adjusts position on calendar. Two tiers of users: admin and basic. 
 
 
 **ISP Coverage Map.**
