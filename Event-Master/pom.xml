@@ -8,11 +8,11 @@
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.urealaden</groupId>
-	<artifactId>CodeFellowShip</artifactId>
+	<groupId>com.jaforest</groupId>
+	<artifactId>Event-Master</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CodeFellowShip</name>
-	<description>Code Fellow ship Application V2.1</description>
+	<description>Event-Master</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
