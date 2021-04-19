@@ -11,7 +11,7 @@
 	<groupId>com.jaforest</groupId>
 	<artifactId>Event-Master</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Event-Master</name>
+	<name>Event Master</name>
 	<description>Event-Master</description>
 	<properties>
 		<java.version>11</java.version>
@@ -96,11 +96,5 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+	</dependencies>
 </project>
