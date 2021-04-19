@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="" />
+    <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,14 +43,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt; 5946a0ef0e3e54491311d7f8d91afc7c03be9e6c
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RunManager">
     <configuration name="EventMasterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="/lib/jvm/java-11-amazon-corretto" />
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.jaforest.Event.Master.EventMasterApplication" />
       <module name="Event-Master" />
@@ -53,6 +59,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="Event-Master" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

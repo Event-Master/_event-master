@@ -13,12 +13,12 @@ public class ApplicationController {
 
     @GetMapping("/")
     public String showSplashPage(){
-        return "splash.html";
+        return "home.html";
     }
 
     @GetMapping("/signup")
     public String showSignupPage(){
-        return "signup.html";
+        return "login.html";
     }
 
     @GetMapping("/calendar")
@@ -33,7 +33,7 @@ public class ApplicationController {
 
     @GetMapping("/about")
     public String showAboutPage(){
-        return "about.html";
+        return "aboutus.html";
     }
 
 }
