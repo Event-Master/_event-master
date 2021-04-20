@@ -9,6 +9,27 @@
 
     <h1>EVENT MASTER</h1>
 
+    <form action="/newUser" method="post">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" name="firstName">
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="lastName">
+
+        <select name="role">
+            <option>Select Role</option>
+            <option>Parent</option>
+            <option>Child</option>
+        </select>
+
+        <input type="submit" value="signup">
+    </form>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
 </body>

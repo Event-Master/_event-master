@@ -8,14 +8,18 @@
     <header th:replace="./fragments/header :: header"></header>
 
     <h1>Signup</h1>
-    <form action="/login" method="POST">
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username">
+    <form action="/newFamily" method="POST">
 
-        <label for="password">Password</label>
-        <input id="password" type="text" name="password">
+        <label for="familyUsername">Username</label>
+        <input id="familyUsername" type="text" name="familyUsername">
 
-        <input type="submit" value="signup">
+        <label for="familyPassword">Password</label>
+        <input id="familyPassword" type="password" name="familyPassword">
+
+        <label for="familyName">Family Name</label>
+        <input id="familyName" type="text" name="familyName">
+
+        <input type="submit" value="Create New Family">
     </form>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
