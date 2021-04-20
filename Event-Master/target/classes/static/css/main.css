@@ -1,3 +1,43 @@
 
 
 /*# sourceMappingURL=main.css.map */
+body {
+    background-color: #e5e5e5ff;
+     color: #14213dff;
+     text-align: center;
+     margin: 5px;
+     border: 5px;
+     padding: 5px;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+
+.fragment-header {
+    background-color: #fca311ff;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 100px
+}
+
+.home-div {
+    background-color: #a2e8f5f1;
+     text-align: center;
+     padding: 50px;
+     font-size: 30px;
+}
+
+.home-form {
+      border: 10px #14213dff;
+      border-radius: 50px;
+
+}
+
+.fragment-footer {
+    background-color:  #fca311ff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 100px
+}
+
