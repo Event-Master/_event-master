@@ -10,23 +10,42 @@
 </head>
 <body>
     <header class="header" th:replace="./fragments/header :: header"></header>
-
-
-    <div class="home-div">
-        <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
-        <form class="home-form" action="/calendar" method="POST">
-        <label for="username"></label>
-        <input  id="username" type="text" name="username">
-
-        <label for="password"></label>
-        <input  id="password" type="text" name="password">
-
-        <input type="submit" value="login">
-    </form>
-
-    <form class="home-form" for="create-account" method="get" action="/signup">
-        <button type="submit">Create Account</button>
-    </form>
+    <div class="section">
+        <div class="row">
+            <div class="col-1-of-2">
+                <form action="/calendar" method="GET" class="form">
+                    <div class="form__group">
+                        <input  id="username-1" class="form__input"
+                                type="text"placeholder="Username" required name="username">
+                        <label for="username-1" class="form__label">Username</label>
+                    </div>
+                    <div class="form__group">
+                        <input  id="password-1" class="form__input" required type="text"
+                                placeholder="Password" name="password">
+                        <label for="password-1" class="form__label">Password</label>
+                    </div>
+                    <div class="form__group form__group--btn">
+                        <button class="btn btn--orange" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-1-of-2">
+                <form for="create-account" action="/signup" class="form form__create-account" method="POST">
+                    <div class="form__group">
+                        <input  id="username-2" class="form__input"
+                                type="text"placeholder="Choose a Username"  name="username">
+                        <label for="username-2" class="form__label">Choose a Username</label>
+                    </div>
+                    <div class="form__group">
+                        <input  id="password" class="form__input" type="text" placeholder="Enter a Password" name="password">
+                        <label for="password" class="form__label">Enter a Password</label>
+                    </div>
+                    <div class="form__group form__group--btn">
+                        <button type="submit" class="btn btn--orange">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
