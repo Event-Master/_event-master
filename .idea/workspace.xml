@@ -8,6 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/fullcalendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/semantic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/jquery-3.x.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/moment_2.29.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/semantic_2.4.1.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +100,9 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.scss" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

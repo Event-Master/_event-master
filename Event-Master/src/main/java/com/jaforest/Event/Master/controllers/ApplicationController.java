@@ -19,8 +19,6 @@ public class ApplicationController {
         if(p != null){
             System.out.println("p.getname = " + p.getName());
         }
-        return "home.html";
-    }
 
     @GetMapping("/signup")
     public String showSignupPage(){
