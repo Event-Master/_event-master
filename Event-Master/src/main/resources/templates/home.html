@@ -11,17 +11,15 @@
     <header th:replace="./fragments/header :: header"></header>
 
     <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
-<!--    <form action="/login" method="POST">-->
-<!--        <label for="username"></label>-->
-<!--        <input  id="username" type="text" name="username">-->
+    <form action="/login" method="POST">
+        <label for="username"></label>
+        <input  id="username" type="text" name="username">
 
-<!--        <label for="password"></label>-->
-<!--        <input  id="password" type="password" name="password">-->
+        <label for="password"></label>
+        <input  id="password" type="password" name="password">
 
-<!--        <input type="submit" value="login">-->
-<!--    </form>-->
-    <a href="/login">Login</a>
-
+        <input type="submit" value="login">
+    </form>
 
     <form for="create-account" method="get" action="/signup">
         <button type="submit">Create Account</button>
