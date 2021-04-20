@@ -10,20 +10,29 @@
 <body>
     <header th:replace="./fragments/header :: header"></header>
 
-    <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
-    <form action="/calendar" method="GET">
-        <label for="username"></label>
-        <input  id="username" type="text" name="username">
-
-        <label for="password"></label>
-        <input  id="password" type="text" name="password">
-
-        <input type="submit" value="login">
-    </form>
-
-    <form for="create-account" method="get" action="/signup">
-        <button type="submit">Create Account</button>
-    </form>
+    <div class="section">
+        <div class="section__container">
+            <form action="/calendar" method="GET" class="form">
+                <div class="form__heading">
+                    <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
+                </div>
+                <div class="form__group">
+                    <input  id="username" class="form__input" type="text" name="username">
+                    <label for="username" class="form__label">Username</label>
+                </div>
+                <div class="form__group">
+                    <input  id="password" class="form__input" type="text" name="password">
+                    <label for="password" class="form__label">Password</label>
+                </div>
+                <div class="form__group">
+                    <button class="btn" type="submit">Login</button>
+                </div>
+            </form>
+            <form for="create-account" action="/signup" class="form">
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
+    </div>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
 </body>
