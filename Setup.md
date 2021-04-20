@@ -6,7 +6,8 @@ Organizations, teams, families and students need an efficient and responsive mod
 
 - Run `npm install -g sass` to install sass 
 
-- Run `sass --version`. You should recieve an output similar to `1.32.8 compiled with dart2js 2.10.5`.
+- Run `sass --version`. You should receive an output similar to `1.32.8 compiled with dart2js 2.
+  10.5`.
 
 - Open the [application.properties](Event-Master/src/main/resources/application.properties) and change: 
     - Mac Users remove the following lines of code:
