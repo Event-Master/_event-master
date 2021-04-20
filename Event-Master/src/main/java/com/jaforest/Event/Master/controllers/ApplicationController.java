@@ -33,7 +33,7 @@ public class ApplicationController {
 
     @GetMapping("/about")
     public String showAboutPage(){
-        return "about.html";
+        return "aboutus.html";
     }
 
 }
