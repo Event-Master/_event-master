@@ -31,25 +31,32 @@
                 </form>
             </div>
             <div class="col-1-of-2">
-                <form for="familyUsername" action="/newFamily" class="form form__create-account"
+                <form for="username" action="/newUser" class="form form__create-account"
                       method="POST">
                     <div class="form__group">
-                        <input  id="familyUsername" class="form__input"
+                        <input  id="username" class="form__input"
                                 type="text" placeholder="Choose a Username" required
-                                name="familyUsername">
-                        <label for="familyUsername" class="form__label">Choose a Username</label>
+                                name="username">
+                        <label for="username" class="form__label">Choose a Username</label>
                     </div>
                     <div class="form__group">
-                        <input  id="familyPassword" class="form__input" type="password"
-                                placeholder="Enter a Password" name="familyPassword">
-                        <label for="familyPassword" class="form__label">Enter a Password</label>
+                        <input  id="password" class="form__input" type="password"
+                                placeholder="Enter a Password" name="password">
+                        <label for="password" class="form__label">Enter a Password</label>
                     </div>
                     <div class="form__group ">
-                        <input id="familyName" class="form__input"
-                               placeholder="Enter your family name"
-                               type="text"name="familyName">
-                        <label for="familyName" class="form__label" >Family Name</label>
+                        <input id="firstName" class="form__input"
+                               placeholder="Enter your first name"
+                               type="text"name="firstName">
+                        <label for="firstName" class="form__label" >First Name</label>
                     </div>
+                    <div class="form__group ">
+                        <input id="lastName" class="form__input"
+                               placeholder="Enter your last name"
+                               type="text"name="lastName">
+                        <label for="lastName" class="form__label" >Last Name</label>
+                    </div>
+
                     <div class="form__group form__group--btn">
                         <button type="submit" class="btn btn--orange">Create Account</button>
                     </div>

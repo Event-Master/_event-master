@@ -17,7 +17,7 @@
                 <a class=" active item" href="/calendar" >Calendar</a>
                 <a class="item" href="/profile" >Profile</a>
                 <a class="item" href="/aboutus" >About</a>
-                <a class="item" href="/logout" >Logout</a>
+                <a th:if="${member}"class="item" href="/logout" >Logout</a>
                 <div class="ui pointing dropdown link item">
                     Group
                     <i class="dropdown icon"></i>
