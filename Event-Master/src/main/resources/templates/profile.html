@@ -10,13 +10,33 @@
 
     <h1>EVENT MASTER</h1>
 
+    <form action="/newUser" method="post">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" name="firstName">
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="lastName">
+
+        <select name="role">
+            <option>Select Role</option>
+            <option>Parent</option>
+            <option>Child</option>
+        </select>
+
+        <input type="submit" value="signup">
+    </form>
     <img src="https://placehold.it/200x70/111" alt="User's Picture">
     <h2>Name:</h2>
     <h3>Total stats for this week:</h3>
     <h4>Reward points:</h4>
 
     <h2>Upcoming tasks:</h2>
-
 
     <footer th:replace="./fragments/footer :: footer"></footer>
 </body>
