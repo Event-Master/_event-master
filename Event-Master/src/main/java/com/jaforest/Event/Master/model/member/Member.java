@@ -35,6 +35,26 @@ public class Member implements UserDetails {
     @ManyToOne
     Family familyIBelongTo;
 
+    @Column(unique = true)
+    String password;
+    String username;
+    String firstName;
+    String lastName;
+    String role;
+    int rewardPoints;
+
+    public Member(String password, String username, String firstName,
+                  String lastName, String role, Family familyIBelongTo) {
+        this.password = password;
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.role = role;
+        this.familyIBelongTo = familyIBelongTo;
+    }
+
+    public Member(){};
+
     public Family getFamilyIBelongTo() {
         return familyIBelongTo;
     }
@@ -42,28 +62,6 @@ public class Member implements UserDetails {
     public void setFamilyIBelongTo(Family familyIBelongTo) {
         this.familyIBelongTo = familyIBelongTo;
     }
-
-    String password;
-    @Column(unique = true)
-    String username;
-    String firstName;
-    String lastName;
-    String role;
-    String family;
-    int rewardPoints;
-
-    public Member(String password, String username, String firstName,
-                  String lastName, String role, String family, int rewardPoints) {
-        this.password = password;
-        this.username = username;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.role = role;
-        this.family = family;
-        this.rewardPoints = rewardPoints;
-    }
-
-    public Member(){};
 
     public void setUsername(String username){this.username = username;}
     public void setPassword(String password){this.password = password;}
@@ -94,13 +92,6 @@ public class Member implements UserDetails {
     }
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public String getFamily() {
-        return family;
-    }
-    public void setFamily(String family) {
-        this.family = family;
     }
 
     public int getRewardPoints() {

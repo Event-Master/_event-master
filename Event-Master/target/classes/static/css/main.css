@@ -126,7 +126,7 @@ body {
     width: calc((100% - 6rem) / 2); }
 =======
 /*# sourceMappingURL=main.css.map */
-/*body {
+body {
     background-color: #e5e5e5ff;
      color: #14213dff;
      text-align: center;
@@ -156,7 +156,7 @@ body {
       border: 10px #14213dff;
       border-radius: 50px;
 
-}*/
+}
 
 .fragment-footer {
     background-color:  #fca311ff;
@@ -165,4 +165,5 @@ body {
     font-size: 20px;
     border-radius: 100px
 }
+
 
