@@ -14,14 +14,14 @@
     <div class="section">
         <div class="row">
             <div class="col-1-of-2">
-                <form action="/calendar" method="POST" class="form">
+                <form action="/login" method="POST" class="form">
                     <div class="form__group">
                         <input  id="username-1" class="form__input"
                                 type="text"placeholder="Username" required name="username">
                         <label for="username-1" class="form__label">Username</label>
                     </div>
                     <div class="form__group">
-                        <input  id="password-1" class="form__input" required type="text"
+                        <input  id="password-1" class="form__input" required type="password"
                                 placeholder="Password" name="password">
                         <label for="password-1" class="form__label">Password</label>
                     </div>
@@ -31,15 +31,24 @@
                 </form>
             </div>
             <div class="col-1-of-2">
-                <form for="create-account" action="/signup" class="form form__create-account" method="POST">
+                <form for="familyUsername" action="/newFamily" class="form form__create-account"
+                      method="POST">
                     <div class="form__group">
-                        <input  id="username-2" class="form__input"
-                                type="text"placeholder="Choose a Username"  name="username">
-                        <label for="username-2" class="form__label">Choose a Username</label>
+                        <input  id="familyUsername" class="form__input"
+                                type="text" placeholder="Choose a Username" required
+                                name="familyUsername">
+                        <label for="familyUsername" class="form__label">Choose a Username</label>
                     </div>
                     <div class="form__group">
-                        <input  id="password" class="form__input" type="text" placeholder="Enter a Password" name="password">
-                        <label for="password" class="form__label">Enter a Password</label>
+                        <input  id="familyPassword" class="form__input" type="password"
+                                placeholder="Enter a Password" name="familyPassword">
+                        <label for="familyPassword" class="form__label">Enter a Password</label>
+                    </div>
+                    <div class="form__group ">
+                        <input id="familyName" class="form__input"
+                               placeholder="Enter your family name"
+                               type="text"name="familyName">
+                        <label for="familyName" class="form__label" >Family Name</label>
                     </div>
                     <div class="form__group form__group--btn">
                         <button type="submit" class="btn btn--orange">Create Account</button>
@@ -47,6 +56,19 @@
                 </form>
             </div>
         </div>
+<!--        <form action="/newFamily" method="POST">-->
+
+<!--            <label for="familyUsername">Username</label>-->
+<!--            <input id="_familyUsername" type="text" name="familyUsername">-->
+
+<!--            <label for="familyPassword">Password</label>-->
+<!--            <input id="_familyPassword" type="password" name="familyPassword">-->
+
+<!--            <label for="familyName">Family Name</label>-->
+<!--            <input id="_familyName" type="text" name="familyName">-->
+
+<!--            <input type="submit" value="Create New Family">-->
+<!--        </form>-->
     </div>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
