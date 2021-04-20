@@ -11,26 +11,40 @@
     <header th:replace="./fragments/header :: header"></header>
 
     <div class="section">
-        <div class="section__container">
-            <form action="/calendar" method="GET" class="form">
-                <div class="form__heading">
-                    <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
-                </div>
-                <div class="form__group">
-                    <input  id="username" class="form__input" type="text" name="username">
-                    <label for="username" class="form__label">Username</label>
-                </div>
-                <div class="form__group">
-                    <input  id="password" class="form__input" type="text" name="password">
-                    <label for="password" class="form__label">Password</label>
-                </div>
-                <div class="form__group">
-                    <button class="btn" type="submit">Login</button>
-                </div>
-            </form>
-            <form for="create-account" action="/signup" class="form">
-                <button type="submit" class="btn">Create Account</button>
-            </form>
+        <div class="row">
+            <div class="col-1-of-2">
+                <form action="/calendar" method="GET" class="form">
+                    <div class="form__group">
+                        <input  id="username-1" class="form__input"
+                                type="text"placeholder="Username" name="username">
+                        <label for="username-1" class="form__label">Username</label>
+                    </div>
+                    <div class="form__group">
+                        <input  id="password-1" class="form__input" type="text"
+                                placeholder="Password" name="password">
+                        <label for="password-1" class="form__label">Password</label>
+                    </div>
+                    <div class="form__group form__group--btn">
+                        <button class="btn btn--orange" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-1-of-2">
+                <form for="create-account" action="/signup" class="form form__create-account" method="POST">
+                    <div class="form__group">
+                        <input  id="username-2" class="form__input"
+                                type="text"placeholder="Choose a Username" name="username">
+                        <label for="username-2" class="form__label">Username</label>
+                    </div>
+                    <div class="form__group">
+                        <input  id="password" class="form__input" type="text" placeholder="Enter a Password" name="password">
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+                    <div class="form__group form__group--btn">
+                        <button type="submit" class="btn btn--orange">Create Account</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
