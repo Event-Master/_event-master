@@ -11,8 +11,10 @@
 <body>
     <header class="header" th:replace="./fragments/header :: header"></header>
 
-    <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
-    <form action="/calendar" method="POST">
+
+    <div class="home-div">
+        <h1>Welcome to the Event Master! Please sign in or create a account!</h1>
+        <form class="home-form" action="/calendar" method="POST">
         <label for="username"></label>
         <input  id="username" type="text" name="username">
 
@@ -22,9 +24,10 @@
         <input type="submit" value="login">
     </form>
 
-    <form for="create-account" method="get" action="/signup">
+    <form class="home-form" for="create-account" method="get" action="/signup">
         <button type="submit">Create Account</button>
     </form>
+    </div>
 
     <footer th:replace="./fragments/footer :: footer"></footer>
 </body>
