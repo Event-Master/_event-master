@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Event-Master/Event-Master.iml" filepath="$PROJECT_DIR$/Event-Master/Event-Master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/event-master.iml" filepath="$PROJECT_DIR$/.idea/event-master.iml" />
     </modules>
   </component>
 </project>

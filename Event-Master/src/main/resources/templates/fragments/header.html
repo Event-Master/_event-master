@@ -1,10 +1,15 @@
-<ul th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
-    <li><a href="/">Home</a></li>
-    <li><a href="/signup">Sign Up</a></li>
-    <li><a href="/login">Login</a></li>
-    <li><a href="/calendar">Overview</a></li>
-    <li><a href="/aboutus">About Us</a></li>
-    <li><a href="/logout">Logout</a></li>
+<ul th:fragment="header" xmlns:th="http://www.thymeleaf.org">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/app.js"></script>
+
     <div class="ui container">
         <h1 class="header"> Event Master</h1>
         <div class="ui menu">

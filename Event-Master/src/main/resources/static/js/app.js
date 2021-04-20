@@ -1,5 +1,3 @@
-alert("Connected");
-console.log("CONNECTED");
 $(document).ready(function() {
     $('#calendar').fullCalendar({
         header: {
