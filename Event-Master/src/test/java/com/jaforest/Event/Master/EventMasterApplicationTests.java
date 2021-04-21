@@ -26,9 +26,30 @@ class EventMasterApplicationTests {
 	}
 
 	@Test
+	public void testGettersAndSetters() {
+
+	}
+
+	@Test
+	public void testGetRequestEndpoints() {
+
+	}
+
+	@Test
 	void testHomePage() throws Exception {
-		mockMvc.perform(get("/"))
+		mockMvc.perform(get("/home"))
 				.andDo(print())
+				.andExpect((content().string(containsString("<!doctype html>"))))
+				.andExpect((content().string(containsString("<html lang=\"en\" xmlns:th=\"\">"))))
+				.andExpect((content().string(containsString("<head>"))))
+				.andExpect((content().string(containsString("<meta charset=\"UTF-8\">"))))
+				.andExpect((content().string(containsString("<meta name=\"viewport\"\n" +
+						"          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">"))))
+				.andExpect((content().string(containsString("<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">"))))
+				.andExpect((content().string(containsString("<title>Document</title>"))))
+				.andExpect((content().string(containsString("<link rel=\"stylesheet\" href=\"/css/main.css\">"))))
+				.andExpect((content().string(containsString("</head>"))))
+				.andExpect((content().string(containsString("<body>"))))
 				.andExpect((content().string(containsString("<header class=\"header\" th:replace=\"./fragments/header :: header\"></header>"))))
 				.andExpect((content().string(containsString("<div class=\"section\">"))))
 				.andExpect((content().string(containsString("<div class=\"row\">"))))
@@ -81,13 +102,23 @@ class EventMasterApplicationTests {
 				.andExpect((content().string(containsString("</div>"))))
 				.andExpect((content().string(containsString("</div>"))))
 				.andExpect((content().string(containsString("<footer th:replace=\"./fragments/footer :: footer\"></footer>"))))
+				.andExpect((content().string(containsString("</body>"))))
+				.andExpect((content().string(containsString("</html>"))))
 				.andExpect(status().isOk());
 	}
 
 	@Test
 	void testSignUpPage() throws Exception {
-		mockMvc.perform(get("/"))
+		mockMvc.perform(get("/signup"))
 				.andDo(print())
+				.andExpect((content().string(containsString("<!DOCTYPE html>"))))
+				.andExpect((content().string(containsString("<html lang=\"en\" xmlns:th=\"\">"))))
+				.andExpect((content().string(containsString("<head>"))))
+				.andExpect((content().string(containsString("<meta charset=\"UTF-8\">"))))
+				.andExpect((content().string(containsString("<title>Title</title>"))))
+				.andExpect((content().string(containsString("<link rel=\"stylesheet\" href=\"/css/main.css\">"))))
+				.andExpect((content().string(containsString("</head>"))))
+				.andExpect((content().string(containsString("<body>"))))
 				.andExpect((content().string(containsString("<header th:replace=\"./fragments/header :: header\"></header>"))))
 				.andExpect((content().string(containsString("<h1>Signup</h1>"))))
 				.andExpect((content().string(containsString("<form action=\"/newFamily\" method=\"POST\">"))))
@@ -100,13 +131,23 @@ class EventMasterApplicationTests {
 				.andExpect((content().string(containsString("<input type=\"submit\" value=\"Create New Family\">"))))
 				.andExpect((content().string(containsString("</form>"))))
 				.andExpect((content().string(containsString("<footer th:replace=\"./fragments/footer :: footer\"></footer>"))))
+				.andExpect((content().string(containsString("</body>"))))
+				.andExpect((content().string(containsString("</html>"))))
 				.andExpect(status().isOk());
 	}
 
 	@Test
 	void testLoginPage() throws Exception {
-		mockMvc.perform(get("/"))
+		mockMvc.perform(get("/login"))
 				.andDo(print())
+				.andExpect((content().string(containsString("<!DOCTYPE html>"))))
+				.andExpect((content().string(containsString("<html lang=\"en\" xmlns:th=\"\">"))))
+				.andExpect((content().string(containsString("<head>"))))
+				.andExpect((content().string(containsString("<meta charset=\"UTF-8\">"))))
+				.andExpect((content().string(containsString("<title>Title</title>"))))
+				.andExpect((content().string(containsString("<link rel=\"stylesheet\" href=\"/css/main.css\">"))))
+				.andExpect((content().string(containsString("</head>"))))
+				.andExpect((content().string(containsString("<body>"))))
 				.andExpect((content().string(containsString("<header th:replace=\"./fragments/header :: header\"></header>"))))
 				.andExpect((content().string(containsString("<form action=\"/login\" method=\"POST\">"))))
 				.andExpect((content().string(containsString("<label for=\"username\">Username</label>"))))
@@ -116,13 +157,23 @@ class EventMasterApplicationTests {
 				.andExpect((content().string(containsString("<input type=\"submit\" value=\"login\">"))))
 				.andExpect((content().string(containsString("</form>"))))
 				.andExpect((content().string(containsString("<footer th:replace=\"./fragments/footer :: footer\"></footer>"))))
+				.andExpect((content().string(containsString("</body>"))))
+				.andExpect((content().string(containsString("</html>"))))
 				.andExpect(status().isOk());
 	}
 
 	@Test
 	void testCalendarPage() throws Exception {
-		mockMvc.perform(get("/"))
+		mockMvc.perform(get("/calendar"))
 				.andDo(print())
+				.andExpect((content().string(containsString("<!doctype html>"))))
+				.andExpect((content().string(containsString("<html lang=\"en\" xmlns:th=\"http://www.thymeleaf.org\">"))))
+				.andExpect((content().string(containsString("<head>"))))
+				.andExpect((content().string(containsString("<meta charset=\"UTF-8\">"))))
+				.andExpect((content().string(containsString("<title>Document</title>"))))
+				.andExpect((content().string(containsString("<link rel=\"stylesheet\" href=\"/css/main.css\">"))))
+				.andExpect((content().string(containsString("</head>"))))
+				.andExpect((content().string(containsString("<body>"))))
 				.andExpect((content().string(containsString("<header th:replace=\"./fragments/header :: header\"></header>"))))
 				.andExpect((content().string(containsString("<h3>Add new Event</h3>"))))
 				.andExpect((content().string(containsString("<form action=\"/newEvent\" method=\"post\">"))))
@@ -140,8 +191,10 @@ class EventMasterApplicationTests {
 				.andExpect((content().string(containsString("</div>"))))
 				.andExpect((content().string(containsString("</div>"))))
 				.andExpect((content().string(containsString("<footer th:replace=\"./fragments/footer :: footer\"></footer>"))))
+				.andExpect((content().string(containsString("</body>"))))
+				.andExpect((content().string(containsString("</html>"))))
 				.andExpect(status().isOk());
 	}
-	
+
 
 }
