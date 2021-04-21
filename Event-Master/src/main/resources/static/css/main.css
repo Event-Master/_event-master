@@ -180,14 +180,15 @@ body {
   .section__tertiary--textB {
     justify-self: flex-start;
     flex: 1; }
-
+/* Changes the calendar size*/
 .fc-widget-content {
-  margin-bottom: 5rem;
-  height: 25rem; }
+  margin-bottom: 4rem;
+  height: 7.5rem; }
 
 .fc-scroller {
   height: 700px !important; }
-/* Changes the calendar color*/
+
+/* Changes the calendar content*/
   .fc-view-container {
       width: 100% !important;
 
@@ -201,21 +202,23 @@ body {
   }
 
  .fc-row .fc-week .fc-widget-content .fc-rigid{
-    height: 1rem;
+    height: .5rem;
  }
 
  .fc-bg{
-    height: 5rem;
+    height: 3rem;
  }
- /* Changes the calendar event*/
- .fc-event-container{
-  background-color: #fca311ff;
- }
+ /* Changes the calendar events*/
 
- .fc-day-grid-event .fc-h-event .fc-event .fc-start .fc-end .fc-draggable .fc-resizable {
-    color: #fcbe5b;
-    height:5
- }
+.fc-content{
+    background-color: #fca311ff;
+    color: #14213dff;
+}
+
+ /* Changes the calendar date*/
+.fc-day-number{
+    color:black;
+}
 
 .fragment-footer {
   margin-top: 5rem;
