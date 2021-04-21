@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#calendar').fullCalendar({
+    $('#calendar-main').fullCalendar({
         header: {
             left: 'prev,next, today',
             center: 'title',
