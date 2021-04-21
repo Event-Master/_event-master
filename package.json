@@ -3,5 +3,26 @@
     "gulp": "^4.0.2",
     "mvn": "^3.5.0",
     "sass": "^1.32.8"
-  }
+  },
+  "name": "event-master",
+  "description": "**Team Ja-Forest** [Amelia Waggoner](https://github.com/GoldenDog190) [Barrett Nance](https://github.com/baxance) [Matthew Simms](https://github.com/mparkersimms) [Leaundrae Mckinney](https://github.com/UreaLaden)",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Event-Master/_event-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Event-Master/_event-master/issues"
+  },
+  "homepage": "https://github.com/Event-Master/_event-master#readme"
 }
