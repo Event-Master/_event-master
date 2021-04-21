@@ -13,6 +13,41 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long id;
 
+    String title;
+    String date;
+
+    public Event(String title, String date, Family familyEventsIBelongTo) {
+        this.title = title;
+        this.date = date;
+        this.familyEventsIBelongTo = familyEventsIBelongTo;
+    }
+
+    public Event(){};
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     @ManyToOne
     Family familyEventsIBelongTo;
 

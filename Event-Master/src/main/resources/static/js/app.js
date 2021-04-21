@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#calendar-main').fullCalendar({
         header: {
-            left: 'prev,next today',
+            left: 'prev,next, today',
             center: 'title',
             right: 'month,basicWeek,basicDay'
         },
@@ -64,8 +64,25 @@ $(document).ready(function() {
                 title: 'Click for Google',
                 url: 'https://google.com/',
                 start: '2020-12-28'
+            },
+            {
+                title: 'Christmas!',
+                start: '2020-12-25',
+                allDay: true
             }
         ]
     });
 
 });
+
+ calendar.addEvent({
+    title: 'Add Event....',
+    start: 2020-12-04,
+    allDay: true
+  });
+
+  function displayCalendar(request, response) {
+    const sqlStr = "SELECT * FROM events WHERE id=$1;";
+    const sqlArr = ["default"];
+
+  }
