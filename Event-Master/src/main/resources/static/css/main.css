@@ -200,24 +200,35 @@ body {
       color:#14213dff;
       background:#7596de;
   }
-
+ /* One of these three changes the size of the date box */
  .fc-row .fc-week .fc-widget-content .fc-rigid{
-    height: .5rem;
+    height: 20rem;
  }
 
  .fc-bg{
-    height: 3rem;
+    height: 10rem;
  }
+
+ .fc-content-skeleton{
+    height: 10rem;
+ }
+
  /* Changes the calendar events*/
 
 .fc-content{
     background-color: #fca311ff;
     color: #14213dff;
+    height: 2rem;
 }
 
  /* Changes the calendar date*/
 .fc-day-number{
-    color:black;
+    color:#14213dff;
+
+}
+ /* Changes the color of the more events*/
+.fc-more {
+    color:#14213dff;
 }
 
 .fragment-footer {

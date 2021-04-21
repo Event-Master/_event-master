@@ -57,7 +57,7 @@ public class ApplicationController {
         return "profile.html";
     }
 
-    @GetMapping("/about")
+    @GetMapping("/aboutus")
     public String showAboutPage(){
         return "aboutus.html";
     }
