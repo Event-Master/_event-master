@@ -69,3 +69,15 @@ $(document).ready(function() {
     });
 
 });
+
+ calendar.addEvent({
+    title: 'Add Event....',
+    start: 2020-12-04,
+    allDay: true
+  });
+
+  function displayCalendar(request, response) {
+    const sqlStr = "SELECT * FROM events WHERE id=$1;";
+    const sqlArr = ["default"];
+
+  }
