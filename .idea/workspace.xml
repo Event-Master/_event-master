@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
+
       <change afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/gson/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/gson/events.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -15,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/com/jaforest/Event/Master/EventMasterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/com/jaforest/Event/Master/EventMasterApplication.class" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
+
     <property name="project.structure.proportion" value="0.15" />
+
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
