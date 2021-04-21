@@ -1,13 +1,16 @@
 package com.jaforest.Event.Master.controllers;
 
+import com.jaforest.Event.Master.model.event.Event;
 import com.jaforest.Event.Master.model.member.Member;
 import com.jaforest.Event.Master.model.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.security.Principal;
+import java.util.List;
 
 @Controller
 public class ApplicationController {
@@ -39,6 +42,16 @@ public class ApplicationController {
     public String showCalendarPage(){
         System.out.println("showing calendar route");
         return "calendar.html";
+    }
+
+    @GetMapping("/calendarEvents")
+    @ResponseBody
+    public List showCalendarEvents(Principal p){
+        System.out.println("showing calendarEvents route");
+        System.out.println(p.getName());
+        Member member = memberRepository.findByUsername(p.getName());
+        List<Event> eventList = member.getFamilyIBelongTo().getEvents();
+        return eventList;
     }
 
     @GetMapping("/profile")
