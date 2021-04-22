@@ -49,9 +49,15 @@
                         </select>
                         <button class="btn btn--orange member-btn member-form--btn"
                                 type="submit">Add Member</button>
+
                     </div>
                 </form>
             </div>
+
+            <form th:if="${member.role} == 'parent'" action="/deleteAllPoints" method="post">
+                <button class="btn btn--orange member-btn member-form--btn"
+                        type="submit">WIPE POINTS</button>
+            </form>
 
 
             <div class="section__primary">

@@ -19,6 +19,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class EventController {
@@ -41,13 +42,24 @@ public class EventController {
     @PostMapping("/newEvent")
     public RedirectView addNewEvent(Principal p, String title, String startDay,
                                     String endDay, String startDayTime, String endDayTime, String color,
-                                    int reward, String dow) throws ParseException {
-//        System.out.println("start = " + startDay);
-//        System.out.println("end = " + endDay);
-//        System.out.println("dow = " + dow);
-//        System.out.println("username =" + p.getName());
-//        System.out.println("title =" + title);
-//        System.out.println("date =" + date);
+                                    int reward, String dow, String assignTo) throws ParseException {
+
+        System.out.println("ASSIGNED TO = " + assignTo);
+        if (assignTo.equals("Entire Family")){
+            Member member = memberRepository.findByUsername(p.getName());
+            Family family = familyRepository.getOne(member.getFamilyIBelongTo().getId());
+            List<Member> rewardedFamily = family.getMembers();
+            for (Member familyMember : rewardedFamily) {
+                System.out.println("MEMBER NAME = " + familyMember.getFirstName());
+                int awardedMemberPoints = familyMember.getRewardPoints();
+                familyMember.setRewardPoints(awardedMemberPoints + reward);
+            }
+        } else {
+            Member awardedMember = memberRepository.findByUsername(assignTo);
+            int awardedMemberPoints = awardedMember.getRewardPoints();
+            awardedMember.setRewardPoints(awardedMemberPoints + reward);
+            System.out.println("UPDATED TOTAL = " + awardedMember.getRewardPoints());
+        }
         Member member = memberRepository.findByUsername(p.getName());
         Family family = familyRepository.getOne(member.getFamilyIBelongTo().getId());
 
