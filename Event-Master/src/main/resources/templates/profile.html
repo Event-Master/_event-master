@@ -8,126 +8,94 @@
 <body>
     <header th:replace="./fragments/header :: header"></header>
 
-    <h1>Add New Family Member</h1>
+    <h1 class="heading--secondary" th:text="'Welcome back '+ ${member.firstName} + '!'">Add New
+        Family Member</h1>
+    <div class="row row--1">
+        <div class="col-1-of-3 col--1">
+            <div th:replace="./fragments/member :: member"></div>
+        </div>
+        <div class="col-1-of-3 col--2">
+            <div class="section__primary_member-group--current" id="member-btn">
 
-<!--    <form th:if="${member.role} == 'parent'"th:action="'/newUser/' + ${member.familyIBelongTo.id}" method="post">-->
-<!--        <label for="username">Username</label>-->
-<!--        <input id="username" type="text" name="username">-->
-
-<!--        <label for="password">Password</label>-->
-<!--        <input id="password" type="password" name="password">-->
-
-<!--        <label for="firstName">First Name</label>-->
-<!--        <input id="firstName" type="text" name="firstName">-->
-
-<!--        <label for="lastName">Last Name</label>-->
-<!--        <input id="lastName" type="text" name="lastName">-->
-
-<!--        <select name="role">-->
-<!--            <option>Select Role</option>-->
-<!--            <option value="parent">Parent</option>-->
-<!--            <option>Child</option>-->
-<!--        </select>-->
-
-<!--        <input type="submit" value="signup">-->
-<!--    </form>-->
-<!--    <img src="https://placehold.it/200x70/111" alt="User's Picture">-->
-<!--    <h2 th:each="familyMember : ${member.familyIBelongTo.members} "th:text="'Name: ' + ${familyMember.firstName}">Name:</h2>-->
-<!--    <h3>Total stats for this week:</h3>-->
-<!--    <h4>Reward points:</h4>-->
-<!--    <h2>Upcoming tasks:</h2>-->
-
-    <div class="section">
-
-        <div class="section__primary">
-
-            <img src="/img/starfamily.jpeg" class="section__primary--img" alt="Family Picture">
-
-            <div class="section__primary--user-text">
-                <p>First Name:</p>
-                <p>Last Name:</p>
-                <p>Current Role:</p>
+                <!-- <ul>
+                    <li class="current--text" th:each="familyMember : ${member.familyIBelongTo.members} "th:text="'Name: ' + ${familyMember.firstName}">Bob</li>
+                </ul> -->
+                <button class=" btn btn--orange-member member-btn" >Add A Member</button>
 
             </div>
 
-            <div class="section__primary--rewards">
-                <h3 class="heading--secondary">Total stats for this week:</h3>
-                <h4 class="heading--secondary">Reward points:<span class="points heading--primary">50</span></h4>
+            <div class="section__primary_member-group--form" hidden id="member-form">
+
+                <form th:if="${member.role} == 'parent' "th:action="'/newUser/' + ${member.familyIBelongTo.id}" method="post" id="member-form--btn" class="section__primary--newmember">
+                    <div class="form__group">
+                        <input id="username" required placeholder="Username"
+                               class="form__input" type="text" name="username">
+                        <label class="form__label" for="username">Username</label>
+                        <input id="password" required placeholder="Password"
+                               class="form__input" type="password" name="password">
+                        <label class="form__label" for="password">Password</label>
+                        <input id="firstName" required placeholder="First name"
+                               class="form__input"
+                               type="text" name="firstName">
+                        <label class="form__label" for="firstName">First Name</label>
+                        <input id="lastName" required placeholder="Last name"
+                               class="form__input" type="text" name="lastName">
+                        <label class="form__label" for="lastName">Last Name</label>
+                        <select name="role" required class="form__input">
+                            <option>Select Role</option>
+                            <option value="parent">Parent</option>
+                            <option value="child">Child</option>
+                        </select>
+                        <button class="btn btn--orange member-btn member-form--btn"
+                                type="submit">Add Member</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="section__primary">
+                <div class="row section__tertiary">
+                    <div class="section__tertiary col-1-of-3 col--2-col--3"> Col 1 of 2
+                        <ul>
+                            <li>Clean room</li>
+                            <li>Clean garage</li>
+                            <li>Pick up toys</li>
+                            <li>Do homework</li>
+                            <li>Mow the lawn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row section__tertiary">
+                <div class="section__tertiary col-1-of-3 col--2-col--4">
+                    Col 1 of 2
+                    <ul>
+                        <li>Wash dishes</li>
+                        <li>pick up toys</li>
+                        <li>sweep the floor</li>
+                        <li>vacuum</li>
+                        <li>Play</li>
+                    </ul>
+                </div>
             </div>
             <div>
-                <div class="section__primary_member-group--current" id="member-btn">
-
-                    <ul>
-                        <li class="current--text" th:each="familyMember : ${member.familyIBelongTo.members} "th:text="'Name: ' + ${familyMember.firstName}">Bob</li>
-<!--                        <li class="current&#45;&#45;text">Mary Sue</li>-->
-                    </ul>
-                    <button class=" btn btn--orange-member member-btn" >Add A Member</button>
-
-                </div>
-
-                <div class="section__primary_member-group--form" hidden='true' id="member-form">
-
-                    <form
-                            th:if="${member.role} == 'parent' "th:action="'/newUser/' + ${member.familyIBelongTo.id}" method="post" id="member-form--btn" class="section__primary--newmember">
-                        <div class="form__group">
-                            <input id="username" required placeholder="Username"
-                                   class="form__input" type="text">
-                            <label class="form__label" for="username">Username</label>
-                            <input id="password" required placeholder="Password"
-                                   class="form__input" type="password" name="password">
-                            <label class="form__label" for="password">Password</label>
-                            <input id="firstName" required placeholder="First name"
-                                   class="form__input"
-                                   type="text" name="firstName">
-                            <label class="form__label" for="firstName">First Name</label>
-                            <input id="lastName" required placeholder="Last name"
-                                   class="form__input" type="text" name="lastName">
-                            <label class="form__label" for="lastName">Last Name</label>
-                            <select name="role" required class="form__input">
-                                <option>Select Role</option>
-                                <option value="parent">Parent</option>
-                                <option value="child">Child</option>
-                            </select>
-                            <button class="btn btn--orange member-btn member-form--btn"
-                               type="submit">Add Member</button>
-                        </div>
-
-                        <!-- <select name="role">
-                            <option>Select Role</option>
-                            <option>Parent</option>
-                            <option>Child</option>
-                        -->
-                    </form>
-                </div>
             </div>
 
         </div>
 
-        <section class="section__secondary">
-            <div  id="calendar-profile"></div>
+
+        <div class="section">
+
+        </div>
+
+        <section hidden class="section__secondary">
+            <div id="calendar-profile"></div>
         </section>
 
         <section class="section__tertiary">
-            <div class="section__tertiary--textA">
-                <ul>
-                    <li>Clean room</li>
-                    <li>Clean garage</li>
-                    <li>Pick up toys</li>
-                    <li>Do homework</li>
-                    <li>Mow the lawn</li>
-                </ul>
-            </div>
 
-            <div class="section__tertiary--textB">
-                <ul>
-                    <li>Wash dishes</li>
-                    <li>pick up toys</li>
-                    <li>sweep the floor</li>
-                    <li>vacuum</li>
-                    <li>Play</li>
-                </ul>
-            </div>
         </section>
+
     </div>
     <footer th:replace="./fragments/footer :: footer"></footer>
 </body>

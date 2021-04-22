@@ -1,0 +1,16 @@
+<div th:each="familyMember : ${member.familyIBelongTo.members}" th:fragment="member"
+     xmlns:th="http://www.w3.org/1999/xhtml" class="member">
+    <h2 class="heading--primary heading--primary-member"
+        th:text="${familyMember.firstName}">Bob Allen</h2>
+    <img src="/img/starfamily.jpeg" class="section__primary--img" alt="Family Picture">
+    <div class="section__primary--user-text">
+        <p class="member__name" th:text="'First Name: ' + ${familyMember.firstName}" >First
+            Name:</p>
+        <p class="member__name" th:text="'Last Name: ' + ${familyMember.lastName}"  >Last Name:</p>
+        <p class="member__name" th:text="'Role: ' + ${familyMember.role}" >Current Role:</p>
+    </div>
+    <div class="section__primary--rewards">
+        <h3 class="heading--secondary">Total stats for the week:</h3>
+        <h4 class="heading--secondary">Reward points:<span class="heading--primary-points">50</span></h4>
+    </div>
+</div>

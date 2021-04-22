@@ -5,31 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
-<<<<<<< HEAD
-=======
-
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/boystudying.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/calendar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/dadandkids.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/girlreading.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/homework.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/makingdinner.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/starfamily.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
->>>>>>> 27c396d20ce55e95280f8359fdbb83b3ef745370
+      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/gson/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/gson/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" afterDir="false" />
->>>>>>> 27c396d20ce55e95280f8359fdbb83b3ef745370
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +31,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="corretto-11" />
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -56,6 +38,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="corretto-11" />
   </component>
   <component name="ProjectId" id="1rE7SA5U36ouCGi7BsxlDsTsdEW" />
   <component name="ProjectLevelVcsManager">
