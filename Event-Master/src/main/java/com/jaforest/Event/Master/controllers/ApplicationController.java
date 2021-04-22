@@ -39,7 +39,10 @@ public class ApplicationController {
     }
 
     @GetMapping("/calendar")
-    public String showCalendarPage(){
+    public String showCalendarPage(Principal p, Model m){
+        Member member = memberRepository.findByUsername(p.getName());
+        List<Member> members = member.getFamilyIBelongTo().getMembers();
+        m.addAttribute("members",members);
         System.out.println("showing calendar route");
         return "calendar.html";
     }
