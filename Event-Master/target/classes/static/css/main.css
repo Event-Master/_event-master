@@ -11,10 +11,14 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-image: linear-gradient(to right, #e5e5e5ff, #ffffffff); }
+  background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff); }
 
 .heading {
   text-align: center;
+  background-image: linear-gradient(to right, #14213dff, #b2c1df);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   letter-spacing: .1rem;
   transition: all .2s;
   text-shadow: 0.5rem 1rem 2rem rgba(252, 163, 17, 0.2);
@@ -218,13 +222,56 @@ body {
     margin-left: 2rem; }
   .section__tertiary--textB {
     flex: 1; }
-
+/* Changes the calendar size*/
 .fc-widget-content {
-  margin-bottom: 5rem;
-  height: 30rem; }
+  margin-bottom: 4rem;
+  height: 7.5rem; }
 
 .fc-scroller {
-  height: 800px !important; }
+  height: 700px !important; }
+
+/* Changes the calendar content*/
+  .fc-view-container {
+      width: 100% !important;
+
+     /*
+      box-sizing: border-box;
+      border-spacing: 0;
+      border-collapse: collapse;*/
+      font-size: 1.5rem;
+      color:#14213dff;
+      background:#7596de;
+  }
+ /* One of these three changes the size of the date box */
+ .fc-row .fc-week .fc-widget-content .fc-rigid{
+    height: 20rem;
+ }
+
+ .fc-bg{
+    height: 10rem;
+ }
+
+ .fc-content-skeleton{
+    height: 10rem;
+ }
+
+ /* Changes the calendar events*/
+
+.fc-content{
+    background-color: #fca311ff;
+    color: #14213dff;
+    height: 2rem;
+}
+
+ /* Changes the calendar date*/
+.fc-day-number{
+    color:#14213dff;
+
+}
+ /* Changes the color of the more events*/
+.fc-more {
+    color:#14213dff;
+}
 
 .fragment-footer {
   margin-top: 5rem;

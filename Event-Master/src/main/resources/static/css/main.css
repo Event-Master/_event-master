@@ -11,10 +11,14 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-image: linear-gradient(to right, #e5e5e5ff, #ffffffff); }
+  background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff); }
 
 .heading {
   text-align: center;
+  background-image: linear-gradient(to right, #14213dff, #b2c1df);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   letter-spacing: .1rem;
   transition: all .2s;
   text-shadow: 0.5rem 1rem 2rem rgba(252, 163, 17, 0.2);
@@ -218,13 +222,6 @@ body {
     margin-left: 2rem; }
   .section__tertiary--textB {
     flex: 1; }
-
-.fc-widget-content {
-  margin-bottom: 5rem;
-  height: 30rem; }
-
-.fc-scroller {
-  height: 800px !important; }
 
 .fragment-footer {
   margin-top: 5rem;
