@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/barrett.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +40,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Event-Master/src/main/resources/static/img" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\banan\Documents\CodeFellows\401\_event-master\Event-Master\src\main\resources\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\banan\Documents\CodeFellows\401\_event-master" />
     </key>
