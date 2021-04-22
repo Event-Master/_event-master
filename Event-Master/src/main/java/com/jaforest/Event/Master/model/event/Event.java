@@ -18,13 +18,18 @@ public class Event {
     String startDay;
     String endDay;
     String dow;
+    String color;
+    int reward;
 
     public Event(String title, String startDay, String endDay, String dow,
-                 Family familyEventsIBelongTo) {
+                 String color, int reward, Family familyEventsIBelongTo) {
         this.title = title;
         this.startDay = startDay;
         this.endDay = endDay;
         this.dow = dow;
+        this.color = color;
+        this.reward = reward;
+
         this.familyEventsIBelongTo = familyEventsIBelongTo;
     }
 
@@ -70,6 +75,21 @@ public class Event {
         this.dow = dow;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getReward() {
+        return reward;
+    }
+
+    public void setReward(int reward) {
+        this.reward = reward;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore

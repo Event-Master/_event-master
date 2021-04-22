@@ -32,7 +32,8 @@ public class EventController {
 
     @PostMapping("/newEvent")
     public RedirectView addNewEvent(Principal p, String title, String startDay,
-                                    String endDay, String startDayTime, String endDayTime, String dow) throws ParseException {
+                                    String endDay, String startDayTime, String endDayTime, String color,
+                                    int reward, String dow) throws ParseException {
 //        System.out.println("start = " + startDay);
 //        System.out.println("end = " + endDay);
 //        System.out.println("dow = " + dow);
@@ -44,6 +45,8 @@ public class EventController {
 
         Event event = new Event();
         event.setTitle(title);
+        event.setColor(color);
+        event.setReward(reward);
 
         String dowInt = "";
 
