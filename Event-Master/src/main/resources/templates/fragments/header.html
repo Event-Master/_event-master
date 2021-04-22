@@ -52,7 +52,12 @@
                 <span class="heading--primary">
                     Welcome to the Event Master!
                 </span>
-                <span class="heading--secondary">Please sign in or create an account!</span>
+                <span th:if="${#httpServletRequest.requestURI == '/'}"
+                      class="heading--secondary">Please sign in or
+                    create an
+                    account!</span>
+                <span th:unless="${#httpServletRequest.requestURI == '/'}"
+                      class="heading--secondary"></span>
             </h1>
         </div>
     </header>
