@@ -41,7 +41,6 @@
 <!--    <h4>Reward points:</h4>-->
 <!--    <h2>Upcoming tasks:</h2>-->
 
-    <h1>EVENT MASTER</h1>
     <div class="section">
 
         <div class="section__primary">
@@ -63,35 +62,45 @@
                 <div class="section__primary_member-group--current" id="member-btn">
 
                     <ul>
-                        <li class="current--text">Bob</li>
-                        <li class="current--text">Mary Sue</li>
+                        <li class="current--text" th:each="familyMember : ${member.familyIBelongTo.members} "th:text="'Name: ' + ${familyMember.firstName}">Bob</li>
+<!--                        <li class="current&#45;&#45;text">Mary Sue</li>-->
                     </ul>
-                    <button class=" btn btn--orange-member" >Add A Member</button>
+                    <button class=" btn btn--orange-member member-btn" >Add A Member</button>
 
                 </div>
 
                 <div class="section__primary_member-group--form" hidden='true' id="member-form">
 
-                    <form action="/newUser" method="post" id="member-form--btn" class="section__primary--newmember">
+                    <form
+                            th:if="${member.role} == 'parent' "th:action="'/newUser/' + ${member.familyIBelongTo.id}" method="post" id="member-form--btn" class="section__primary--newmember">
                         <div class="form__group">
-                            <input id="username" placeholder="Username" class="form__input" type="text">
+                            <input id="username" required placeholder="Username"
+                                   class="form__input" type="text">
                             <label class="form__label" for="username">Username</label>
-                            <input id="password" placeholder="Password" class="form__input" type="password">
+                            <input id="password" required placeholder="Password"
+                                   class="form__input" type="password" name="password">
                             <label class="form__label" for="password">Password</label>
-                            <input id="first-name" placeholder="First name" class="form__input" type="text">
-                            <label class="form__label" for="first-name">First Name</label>
-                            <input id="last-name" placeholder="Last name" class="form__input" type="text">
-                            <label class="form__label" for="last-name">Last Name</label>
-                            <input id="role" placeholder="role" class="form__input" type="text">
-                            <label class="form__label" for="role">Role</label>
-                            <button class="btn btn--orange member-btn member-form--btn"  type="submit">Add Member</button>
+                            <input id="firstName" required placeholder="First name"
+                                   class="form__input"
+                                   type="text" name="firstName">
+                            <label class="form__label" for="firstName">First Name</label>
+                            <input id="lastName" required placeholder="Last name"
+                                   class="form__input" type="text" name="lastName">
+                            <label class="form__label" for="lastName">Last Name</label>
+                            <select name="role" required class="form__input">
+                                <option>Select Role</option>
+                                <option value="parent">Parent</option>
+                                <option value="child">Child</option>
+                            </select>
+                            <button class="btn btn--orange member-btn member-form--btn"
+                               type="submit">Add Member</button>
                         </div>
 
                         <!-- <select name="role">
                             <option>Select Role</option>
                             <option>Parent</option>
                             <option>Child</option>
-                        </select> -->
+                        -->
                     </form>
                 </div>
             </div>
