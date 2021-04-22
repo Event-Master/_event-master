@@ -11,11 +11,11 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-image: linear-gradient(to right, #e5e5e5ff, #ffffffff); }
+  background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff); }
 
 .heading {
   text-align: center;
-  background-image: linear-gradient(to right, #14213dff, #fca311ff);
+  background-image: linear-gradient(to right, #14213dff, #b2c1df);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -28,7 +28,20 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: block;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #14213dff, #fca311ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+    .heading--primary-member {
+      text-align: center; }
+    .heading--primary-points {
+      font-size: 4.5rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      display: block;
+      color: #fca311ff;
+      text-shadow: rgba(0, 0, 0, 0.5); }
   .heading--secondary {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -115,7 +128,8 @@ body {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 5rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -129,40 +143,70 @@ body {
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2*6rem) /3);
-    background-color: cadetblue; }
+    height: 100%; }
+    .row .col-1-of-3.col--1 {
+      width: calc((75% - (2 * 6rem) )); }
+    .row .col-1-of-3.col--2 {
+      width: calc((85% - (2 * 6rem))/3); }
+      .row .col-1-of-3.col--2-col--3 {
+        height: 100%; }
+      .row .col-1-of-3.col--2-col--4 {
+        height: 100%; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative; }
+
+.member {
+  float: left;
+  margin: 0 3rem;
+  position: relative;
+  transition: all .8s ease; }
+  .member__name {
+    text-align: center; }
+    .member__name:last-child {
+      padding-bottom: 2rem; }
+  .member__side {
+    transition: .8s ease;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    backface-visibility: hidden;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-size: cover;
+    border-radius: 300px; }
+    .member__side--back {
+      top: 20%;
+      left: 40%;
+      background-color: #14213dff;
+      transform: rotateY(180deg); }
+  .member:hover .member__side--front {
+    transform: rotateY(-180deg); }
+  .member:hover .member__side--back {
+    transform: rotateY(0); }
 
 .section__primary {
-  display: flex;
   margin: 0;
   height: 25vh;
   justify-content: space-between; }
   .section__primary--img {
-    height: 20vh;
+    height: 20rem;
     transition: all .5s;
     border-radius: 600px;
-    align-self: center;
-    order: -1; }
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.8); }
   .section__primary_member-group {
-    align-self: flex-end;
     flex: 1;
     margin-left: 15%; }
     .section__primary_member-group--current {
       order: 5;
       flex: 1;
-      text-align: center;
-      align-self: center; }
+      text-align: center; }
   .section__primary--user-text {
-    width: 18%;
-    padding-left: 2rem;
-    line-height: .25;
-    margin-bottom: 0;
-    align-self: center; }
-  .section__primary--rewards {
-    align-self: center; }
-
-.section .points {
-  font-size: 4.5rem; }
+    display: block;
+    width: 100%;
+    margin-bottom: 0; }
 
 .section .current--text {
   list-style: none; }
@@ -170,7 +214,6 @@ body {
     margin-bottom: 2rem; }
 
 .section__tertiary {
-  display: flex;
   justify-content: space-between;
   font-size: 2.5rem;
   line-height: 3.5rem; }
@@ -178,15 +221,57 @@ body {
     flex: 1;
     margin-left: 2rem; }
   .section__tertiary--textB {
-    justify-self: flex-start;
     flex: 1; }
-
+/* Changes the calendar size*/
 .fc-widget-content {
-  margin-bottom: 5rem;
-  height: 30rem; }
+  margin-bottom: 4rem;
+  height: 7.5rem; }
 
 .fc-scroller {
-  height: 800px !important; }
+  height: 700px !important; }
+
+/* Changes the calendar content*/
+  .fc-view-container {
+      width: 100% !important;
+
+     /*
+      box-sizing: border-box;
+      border-spacing: 0;
+      border-collapse: collapse;*/
+      font-size: 1.5rem;
+      color:#14213dff;
+      background:#7596de;
+  }
+ /* One of these three changes the size of the date box */
+ .fc-row .fc-week .fc-widget-content .fc-rigid{
+    height: 20rem;
+ }
+
+ .fc-bg{
+    height: 10rem;
+ }
+
+ .fc-content-skeleton{
+    height: 10rem;
+ }
+
+ /* Changes the calendar events*/
+
+.fc-content{
+    background-color: #fca311ff;
+    color: #14213dff;
+    height: 2rem;
+}
+
+ /* Changes the calendar date*/
+.fc-day-number{
+    color:#14213dff;
+
+}
+ /* Changes the color of the more events*/
+.fc-more {
+    color:#14213dff;
+}
 
 .fragment-footer {
   margin-top: 5rem;
