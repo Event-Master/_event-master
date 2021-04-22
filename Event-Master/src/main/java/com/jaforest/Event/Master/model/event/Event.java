@@ -1,5 +1,6 @@
 package com.jaforest.Event.Master.model.event;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.jaforest.Event.Master.model.family.Family;
 import com.jaforest.Event.Master.model.member.Member;
 
@@ -48,7 +49,8 @@ public class Event {
         this.date = date;
     }
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     Family familyEventsIBelongTo;
 
     @ManyToMany(mappedBy = "familyEvents")
