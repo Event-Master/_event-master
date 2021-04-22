@@ -15,11 +15,17 @@ public class Event {
     public long id;
 
     String title;
-    String date;
+    String startDay;
+    String endDay;
+    String dow;
 
-    public Event(String title, String date, Family familyEventsIBelongTo) {
+    public Event(String title, String startDay, String endDay, String dow,
+                 Family familyEventsIBelongTo) {
         this.title = title;
-        this.date = date;
+        this.startDay = startDay;
+        this.endDay = endDay;
+        this.dow = dow;
+
         this.familyEventsIBelongTo = familyEventsIBelongTo;
     }
 
@@ -41,13 +47,60 @@ public class Event {
         this.title = title;
     }
 
-    public String getDate() {
-        return date;
+    public String getStartDay() {
+        return startDay;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setStartDay(String startDay) {
+        this.startDay = startDay;
     }
+
+    public String getEndDay() {
+        return endDay;
+    }
+
+    public void setEndDay(String endDay) {
+        this.endDay = endDay;
+    }
+
+    public String getDow() {
+        return dow;
+    }
+
+    public void setDow(String dow) {
+        this.dow = dow;
+    }
+
+//    public Event(String title, String date, int rewardPoints, Family familyEventsIBelongTo) {
+//        this.title = title;
+//        this.date = date;
+//        this.familyEventsIBelongTo = familyEventsIBelongTo;
+//    }
+
+
+//    public long getId() {
+//        return id;
+//    }
+//
+//    public void setId(long id) {
+//        this.id = id;
+//    }
+//
+//    public String getTitle() {
+//        return title;
+//    }
+//
+//    public void setTitle(String title) {
+//        this.title = title;
+//    }
+//
+//    public String getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(String date) {
+//        this.date = date;
+//    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore

@@ -14,8 +14,39 @@
     <form action="/newEvent" method="post">
         <label for="title">Title</label>
         <input type="text" placeholder="Type your Event title here" required name="title">
-        <label for="date">Date</label>
-        <input type="date"  required name="date">
+
+        <label for="allDay">All Day?</label>
+        <input id="allDayCheckbox" type="checkbox"  name="allDay">
+
+        <label class="dateField" for="startDate">Start DAY</label>
+        <input class="dateField" type="date" name="startDay">
+
+        <label class="dateField" for="endDate">End DAY</label>
+        <input class="dateField" type="date" name="endDay">
+
+        <label class="timeField" for="startTime">Start TIME</label>
+        <input class="timeField" type="datetime-local"   name="startDay">
+
+        <label class="timeField" for="endTime">End TIME</label>
+        <input class="timeField" type="datetime-local"  name="endDay">
+
+        <label for="repeat">Repeat?</label>
+        <select name="dow">
+            <option>Never</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+        </select>
+
+        <label for="reward">Reward Points</label>
+        <input type="number" min="0" max="5" name="reward">
+
+        <label for="assignTo">Assign To:</label>
+        <select name="assignTo">
+            <option>Entire Family</option>
+            <option>Member 1</option>
+            <option>Member 2</option>
+        </select>
+
         <input type="submit" value="Add">
     </form>
 
