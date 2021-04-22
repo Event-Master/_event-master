@@ -2,9 +2,11 @@ $(document).ready(function() {
 var eventArray = [];
 $.get("/calendarEvents").then( function(result){
     eventArray = result;
-
     var calendar = $('#calendar-main');
-    calendar.fullCalendar({
+  console.log("we got it to run");
+  console.log(result);
+  console.log(result[0].title)
+  calendar.fullCalendar({
         header: {
             left: 'prev,next, today',
             center: 'title',
@@ -17,37 +19,40 @@ $.get("/calendarEvents").then( function(result){
         events: eventArray
         });
     }).catch(console.log);
-});
+//});
+
 //        events: [
 //            {
-//                title: eventArray[0].title,
-//                start: eventArray[0].date
+//                color: 'red',
+//                title: 'test event hardcoded',
+//                start: '2021-04-21',
+//                dow: [1, 2, 3, 4],
+//                startTime: '10:45:00',
+//                endTime: '12:45:00',
+////                startRecur: '2021-04-21',
+////                endRecur: '2021-04-28'
 //            },
 //            {
-//                title: 'Long Event',
-//                start: '2020-12-07',
-//                end: '2020-12-10'
-//            },//
-//            {
-//                title: 'Christmas!',
-//                start: '2020-12-25',
-//                allDay: true
+//                title: 'start',
+//                start: '2021-04-25T20:15:00',
+//                end: '2021-04-27T20:30:00'
+//
 //            }
 //        ]
 
+   $('.dateField').hide();
 
-//
-// calendar.addEvent({
-//    title: 'Add Event....',
-//    start: 2020-12-04,
-//    allDay: true
-//  });
-//  function displayCalendar(request, response) {
-//    const sqlStr = "SELECT * FROM events WHERE id=$1;";
-//    const sqlArr = ["default"];
-//
-//  }
+    $('#allDayCheckbox').change(function() {
+        if(!this.checked){
+                $('.dateField').hide();
+                $('.timeField').show();
+            }
+        else{
+               $('.dateField').show();
+               $('.timeField').hide();
+            }
+    });
 
 
-
+});
 
