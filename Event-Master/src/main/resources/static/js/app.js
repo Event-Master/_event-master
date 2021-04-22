@@ -1,11 +1,21 @@
 $(document).ready(function() {
 var eventArray = [];
+var EventCreator = function (title, startDay, endDay, color, reward, dow){
+    this.title = title;
+    this.start = startDay;
+    this.end = endDay;
+    this.color = color;
+    this.dow = dow;
+    eventArray.push(this);
+}
+
 $.get("/calendarEvents").then( function(result){
-    eventArray = result;
+    if (!result.length == 0){
+    for (i = 0 ; i < result.length; i++){
+        new EventCreator(result[i].title, result[i].startDay, result[i].endDay, result[i].color);
+    }}
     var calendar = $('#calendar-main');
-  console.log("we got it to run");
-  console.log(result);
-  console.log(result[0].title)
+
   calendar.fullCalendar({
         header: {
             left: 'prev,next, today',
@@ -17,10 +27,6 @@ $.get("/calendarEvents").then( function(result){
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         events: eventArray
-        });
-    }).catch(console.log);
-//});
-
 //        events: [
 //            {
 //                color: 'red',
@@ -34,11 +40,17 @@ $.get("/calendarEvents").then( function(result){
 //            },
 //            {
 //                title: 'start',
-//                start: '2021-04-25T20:15:00',
-//                end: '2021-04-27T20:30:00'
+//                startTime: '2021-04-22T03:36',
+//                endTime: '2021-04-24T11:37'
 //
 //            }
 //        ]
+        });
+
+    }).catch(console.log);
+//});
+
+
 
    $('.dateField').hide();
 

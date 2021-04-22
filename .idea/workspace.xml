@@ -15,6 +15,11 @@
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/model/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/model/event/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
