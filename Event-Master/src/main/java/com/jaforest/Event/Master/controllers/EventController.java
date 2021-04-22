@@ -8,6 +8,8 @@ import com.jaforest.Event.Master.model.member.Member;
 import com.jaforest.Event.Master.model.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -29,6 +31,12 @@ public class EventController {
 
     @Autowired
     FamilyRepository familyRepository;
+
+    @DeleteMapping("/deleteEvent/{id}")
+    public RedirectView deleteEvent(@PathVariable long id){
+        eventRepository.deleteById(id);
+        return new RedirectView("/profile");
+    }
 
     @PostMapping("/newEvent")
     public RedirectView addNewEvent(Principal p, String title, String startDay,
