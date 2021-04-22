@@ -2,7 +2,8 @@
      xmlns:th="http://www.w3.org/1999/xhtml" class="member">
     <h2 class="heading--primary heading--primary-member"
         th:text="${familyMember.firstName}">Bob Allen</h2>
-    <img src="/img/starfamily.jpeg" class="section__primary--img" alt="Family Picture">
+    <img src="" class="section__primary--img" id="member-pic"
+         alt="Family Picture">
     <div class="section__primary--user-text">
         <p class="member__name" th:text="'First Name: ' + ${familyMember.firstName}" >First
             Name:</p>
