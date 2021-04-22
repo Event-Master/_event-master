@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/ApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" afterDir="false" />
@@ -37,6 +46,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="corretto-11" />
   </component>
   <component name="ProjectId" id="1rE7SA5U36ouCGi7BsxlDsTsdEW" />
   <component name="ProjectLevelVcsManager">
