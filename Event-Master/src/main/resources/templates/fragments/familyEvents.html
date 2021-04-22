@@ -1,4 +1,8 @@
 <li th:each="event : ${member.familyIBelongTo.getEvents()}" th:fragment="familyEvents"
      xmlns:th="http://www.w3.org/1999/xhtml" class="member">
     <h2 class="" th:text="${event.title}">Lorem ipsum.</h2>
+
+    <form th:action="'/deleteEvent/' + ${event.id} + '?_method=delete'" method="post">
+        <button>x</button>
+    </form>
 </li>
