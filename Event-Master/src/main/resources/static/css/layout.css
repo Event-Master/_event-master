@@ -1,6 +1,10 @@
 /* Changes the calendar size*/
 .fc-widget-content {
+  -webkit-margin-bottom: 4rem;
+  -moz-margin-bottom: 4rem;
   margin-bottom: 4rem;
+  -webkit-height: 7.5rem;
+  -moz- height: 7.5rem;
   height: 7.5rem; }
 
 .fc-scroller {
@@ -16,7 +20,7 @@
       border-collapse: collapse;*/
       font-size: 1.5rem;
       color:#14213dff;
-      background:#7c99d7;
+      background:#819cd7;
   }
  /* One of these three changes the size of the date box */
  .fc-row .fc-week .fc-widget-content .fc-rigid{
@@ -31,13 +35,26 @@
     height: 10rem;
  }
 
+
  /* Changes the calendar events*/
+
+  /*.fc-h-event {
+    background-color: var(--fc-event-bg-color,#fca311ff);
+    height: 2rem;
+    border-radius: 30%;
+  }
+
+  .fc-event-container{
+      background-color: #fca311ff;
+      height: 2rem;
+      border-radius: 30%;
+  } */
 
 .fc-content{
     background-color: #fca311ff;
     color: #14213dff;
     height: 2rem;
-    border-radius: 30%;
+    border-radius: 10%;
 }
 
  /* Changes the calendar date*/
@@ -49,3 +66,43 @@
 .fc-more {
     color:#14213dff;
 }
+
+/* ---------------------About Us----------------------*/
+.about-h2{
+      font-size: 40px;
+    }
+    .aboutus{
+      display: flex;
+
+      /* justify-content: space-evenly; */
+      /*margin-right: 250px;
+      font-size: 35px;
+      text-align: center;*/
+       display: flex;
+      margin-bottom: 150px;
+        margin: 100;
+        height: 25vh;
+        justify-content: space-between;
+    }
+
+    .aboutus-message {
+     font-size: 18px;
+    }
+
+    .about-img{
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+    }
+
+    .about-info {
+      /* margin-left: 100px;*/
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 10px;
+      font-size: 18px;
+      padding: 50px;
+      background-color: #7596de;
+      border-radius: 20%;
+    }
+

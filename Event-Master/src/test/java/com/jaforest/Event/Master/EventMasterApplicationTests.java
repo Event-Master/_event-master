@@ -66,7 +66,7 @@ class EventMasterApplicationTests {
 		URL url = new URL("http://localhost:8080");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080", url);
 	}
 
 	@Test
@@ -74,7 +74,7 @@ class EventMasterApplicationTests {
 		URL url = new URL("http://localhost:8080/login");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080/login", url);
 	}
 
 	@Test
@@ -82,7 +82,7 @@ class EventMasterApplicationTests {
 		URL url = new URL("http://localhost:8080/signup");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080/signup", url);
 	}
 
 	@Test
@@ -90,7 +90,7 @@ class EventMasterApplicationTests {
 		URL url = new URL("http://localhost:8080/calendar");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080/calendar", url);
 	}
 
 	@Test
@@ -98,15 +98,15 @@ class EventMasterApplicationTests {
 		URL url = new URL("http://localhost:8080/profile");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080/profile", url);
 	}
 
 	@Test
 	public void testGetRequestEndpointsAbout() throws IOException {
-		URL url = new URL("http://localhost:8080/about");
+		URL url = new URL("http://localhost:8080/aboutus");
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
-		http.disconnect();
+		assertEquals("http://localhost:8080/aboutus", url);
 	}
 
 	@Test
