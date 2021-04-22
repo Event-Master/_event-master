@@ -12,13 +12,8 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff); }
-
 .heading {
   text-align: center;
-  background-image: linear-gradient(to right, #14213dff, #b2c1df);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   letter-spacing: .1rem;
   transition: all .2s;
   text-shadow: 0.5rem 1rem 2rem rgba(252, 163, 17, 0.2);
@@ -56,6 +51,10 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 1rem; }
+  .form__group:not(:last-child)-1 {
+    visibility: hidden; }
+  .form__group:not(:last-child)-2 {
+    visibility: visible; }
 
 .form__input {
   font-size: 1.5rem;
@@ -69,6 +68,19 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  .form__input--event {
+    font-size: 1.5rem;
+    font-family: inherit;
+    margin-top: 1.5%;
+    margin-left: 20%;
+    border-radius: 2px;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 60%;
+    display: block;
+    transition: all .3s; }
 
 .form:focus {
   outline: none;
@@ -87,7 +99,12 @@ body {
   margin-left: 2rem;
   margin-top: .7rem;
   display: block;
-  transition: all .3s; }
+  transition: all .3s;
+  position: relative; }
+  .form__label--date {
+    float: left;
+    padding-bottom: 5%;
+    width: 49%; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -125,6 +142,29 @@ body {
   .btn--orange-member {
     background-color: #fca311ff;
     color: #14213dff; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible; }
+  .popup__content {
+    width: 35%;
+    height: 49vh;
+    background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+    .popup__content--item {
+      text-align: center; }
 
 .row {
   max-width: 114rem;
@@ -222,6 +262,13 @@ body {
     margin-left: 2rem; }
   .section__tertiary--textB {
     flex: 1; }
+
+.fc-widget-content {
+  margin-bottom: 5rem;
+  height: 30rem; }
+
+.fc-scroller {
+  height: 800px !important; }
 
 .fragment-footer {
   margin-top: 5rem;
