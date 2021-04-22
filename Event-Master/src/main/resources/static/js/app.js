@@ -1,27 +1,20 @@
 $(document).ready(function() {
 var eventArray = [];
-var EventCreator = function (title, startDay, endDay, dow){
+var EventCreator = function (title, startDay, endDay, color, reward, dow){
     this.title = title;
     this.start = startDay;
     this.end = endDay;
+    this.color = color;
     this.dow = dow;
-
     eventArray.push(this);
 }
 
 $.get("/calendarEvents").then( function(result){
-
+    if (!result.length == 0){
     for (i = 0 ; i < result.length; i++){
-        new EventCreator(result[i].title, result[i].startDay, result[i].endDay);
-    }
+        new EventCreator(result[i].title, result[i].startDay, result[i].endDay, result[i].color);
+    }}
     var calendar = $('#calendar-main');
-  console.log("we got it to run");
-  console.log(result);
-  console.log(result[0].title)
-
-
-
-
 
   calendar.fullCalendar({
         header: {
