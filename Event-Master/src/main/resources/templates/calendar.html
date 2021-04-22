@@ -16,8 +16,8 @@
 <body>
     <header th:replace="./fragments/header :: header"></header>
 
-    <h3>Add new Event</h3>
-    <form action="/newEvent" method="post">
+    <h3 class="calendar-h3">Add new Event</h3>
+    <form class="calendar-form" action="/newEvent" method="post">
         <label for="title">Title</label>
         <input type="text" placeholder="Type your Event title here" required name="title">
 

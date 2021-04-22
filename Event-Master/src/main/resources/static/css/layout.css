@@ -1,3 +1,35 @@
+/*-------------Calendar Page------------*/
+.calendar-h3{
+font-size: 40px;
+font-weight: bold;
+}
+
+.calendar-form{
+    border-color: #14213dff;
+     border-width: 5rem;
+    color: #14213dff;
+    background-color: #6188dc;
+    font-weight: bold;
+}
+
+.fc-toolbar .fc-header-toolbar {
+ color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
+.fc-head {
+ color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
+.fc-day-header .fc-widget-header .fc-wed {
+color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
 /* Changes the calendar size*/
 .fc-widget-content {
   -webkit-margin-bottom: 4rem;
@@ -13,11 +45,11 @@
 /* Changes the calendar content*/
   .fc-view-container {
       width: 100% !important;
-
+     border-collapse: collapse;
      /*
       box-sizing: border-box;
       border-spacing: 0;
-      border-collapse: collapse;*/
+     */
       font-size: 1.5rem;
       color:#14213dff;
       background:#819cd7;
@@ -73,16 +105,10 @@
     }
     .aboutus{
       display: flex;
-
-      /* justify-content: space-evenly; */
-      /*margin-right: 250px;
-      font-size: 35px;
-      text-align: center;*/
-       display: flex;
       margin-bottom: 150px;
-        margin: 100;
-        height: 25vh;
-        justify-content: space-between;
+      margin: 100;
+      height: 25vh;
+      justify-content: space-between;
     }
 
     .aboutus-message {
