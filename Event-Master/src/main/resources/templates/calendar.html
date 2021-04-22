@@ -17,7 +17,8 @@
     <header th:replace="./fragments/header :: header"></header>
 
     <h3 class="heading--primary">Add new Event</h3>
-    <form action="/newEvent" method="post">
+    <form class="calendar-form" action="/newEvent" method="post">
+
         <label for="title">Title</label>
         <input type="text" id="title" placeholder="Type your Event title here" required
                name="title">
@@ -57,7 +58,7 @@
            <option th:each="member: ${members}" th:value="${member.username}" th:text="${member.firstName}"></option>
        </select>
 
-        <input type="submit" value="Add">
+        <input class="calendar-button" type="submit" value="Add">
     </form>
 
     <div class="ui container">

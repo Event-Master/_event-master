@@ -14,44 +14,66 @@
 </head>
 <body>
     <header th:replace="./fragments/header :: header"></header>
-
-    <h1>EVENT MASTER</h1>
-    <p>Thank you for using our app! Below is some information about us.
+    <h2 class="about-h2">About Us</h2>
+    <p class="aboutus-message">Thank you for using our app! Below is some information about us.
         <br /> To find out about us more please go to our LinkedIn and Github pages.</p>
-    <h2>About Us</h2>
 
-    <h2>Amelia Waggoner</h2>
-    <img src="/img/amelia-waggoner.jpeg" alt="Amelia Waggoner's photo">
-    <ul>
-        <li><a href="https://www.linkedin.com/in/amelia-waggoner/">LinkedIn</a></li>
-        <li><a href="https://github.com/GoldenDog190">Github</a></li>
-    </ul>
-    <p>I am a software developer/engineer in HTML, CSS, JavaScript, and Java.
-        <br /> Also, I have B.A. in Japanese language studies and East Asia studies, and minor in international business and economics.</p>
+    <div class="aboutus">
+        <div>
+            <h2>Amelia Waggoner
+                <br /> <a href="https://www.linkedin.com/in/amelia-waggoner/">LinkedIn</a>
+                <br /> <a href="https://github.com/GoldenDog190">Github</a>
+            </h2>
+            <img src="/img/amelia-waggoner.jpeg" alt="Amelia Waggoner's photo"class="about-img">
+        </div>
+        <div class="about-info">
+            <p>I am a Software programmer with a B.A. Japanese language & culture, & minor in international business.
+                <br />Always had a interest in software programming & technology. I picked this skill because it will get me into a career where I can constantly grow & learn.
+                <br />I want to combine my B.A. & software programming skills, & work for a Japanese tech company or a company that is affiliated with Japan.
+                <br />I have experience in customer service & time management.
+            </p>
+        </div>
+    </div>
 
-    <h2>Leaundrae Mckinney</h2>
-    <img src="/img/drae.jpeg" alt="">
-    <ul>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">Github</a></li>
-    </ul>
-    <p></p>
+    <div class="aboutus">
+        <div>
+            <h2>Leaundrae Mckinney
+                <br /> <a href="">LinkedIn</a>
+                <br /> <a href="">Github</a>
+            </h2>
+            <img src="/img/drae.jpeg" alt=""  class="about-img">
+        </div>
+        <div class="about-info">
+            <p>This is info about me</p>
+        </div>
+    </div>
 
-    <h2>Barrett Nance</h2>
-<!--    <img th:src="@{https://placehold.it/200x70/111}" th:alt="">-->
-    <ul>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">Github</a></li>
-    </ul>
-    <p></p>
+    <div class="aboutus">
+        <div>
+            <h2>Barrett Nance
+                <br /> <a href="">LinkedIn</a>
+                <br /> <a href="">Github</a>
+            </h2>
+            <img src=""  class="about-img" alt="">
+        </div>
+        <div class="about-info">
+            <p>This is info about me</p>
+        </div>
+    </div>
 
-    <h2>Matthew Simms</h2>
-<!--    <img th:src="@{https://placehold.it/200x70/111}" th:alt="">-->
-    <ul>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">Github</a></li>
-    </ul>
-    <p></p>
+    <div class="aboutus">
+        <div>
+            <h2>Matthew Simms
+                <br /> <a href="">LinkedIn</a>
+                <br /> <a href="">Github</a>
+            </h2>
+            <img src=""  class="about-img" alt="">
+        </div>
+        <div class="about-info">
+            <p>This is info about me</p>
+        </div>
+    </div>
+
 
 
     <footer th:replace="./fragments/footer :: footer"></footer>
