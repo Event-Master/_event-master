@@ -180,56 +180,6 @@ body {
   .section__tertiary--textB {
     justify-self: flex-start;
     flex: 1; }
-/* Changes the calendar size*/
-.fc-widget-content {
-  margin-bottom: 4rem;
-  height: 7.5rem; }
-
-.fc-scroller {
-  height: 700px !important; }
-
-/* Changes the calendar content*/
-  .fc-view-container {
-      width: 100% !important;
-
-     /*
-      box-sizing: border-box;
-      border-spacing: 0;
-      border-collapse: collapse;*/
-      font-size: 1.5rem;
-      color:#14213dff;
-      background:#7596de;
-  }
- /* One of these three changes the size of the date box */
- .fc-row .fc-week .fc-widget-content .fc-rigid{
-    height: 20rem;
- }
-
- .fc-bg{
-    height: 10rem;
- }
-
- .fc-content-skeleton{
-    height: 10rem;
- }
-
- /* Changes the calendar events*/
-
-.fc-content{
-    background-color: #fca311ff;
-    color: #14213dff;
-    height: 2rem;
-}
-
- /* Changes the calendar date*/
-.fc-day-number{
-    color:#14213dff;
-
-}
- /* Changes the color of the more events*/
-.fc-more {
-    color:#14213dff;
-}
 
 .fragment-footer {
   margin-top: 5rem;
