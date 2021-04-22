@@ -12,6 +12,10 @@ font-weight: bold;
     font-weight: bold;
 }
 
+.calendar-button {
+    padding: 0.3rem;
+}
+
 .fc-toolbar .fc-header-toolbar {
  color: #14213dff;
  font-weight: bold;
@@ -46,41 +50,19 @@ color: #14213dff;
   .fc-view-container {
       width: 100% !important;
      border-collapse: collapse;
-     /*
-      box-sizing: border-box;
-      border-spacing: 0;
-     */
       font-size: 1.5rem;
       color:#14213dff;
       background:#819cd7;
   }
  /* One of these three changes the size of the date box */
- .fc-row .fc-week .fc-widget-content .fc-rigid{
-    height: 20rem;
- }
-
- .fc-bg{
-    height: 10rem;
- }
-
- .fc-content-skeleton{
-    height: 10rem;
+ .fc-basic-view .fc-body .fc-row {
+    -webkit-min-height: 7em;
+    -moz-min-height: 7em;
+     min-height: 7em;
  }
 
 
  /* Changes the calendar events*/
-
-  /*.fc-h-event {
-    background-color: var(--fc-event-bg-color,#fca311ff);
-    height: 2rem;
-    border-radius: 30%;
-  }
-
-  .fc-event-container{
-      background-color: #fca311ff;
-      height: 2rem;
-      border-radius: 30%;
-  } */
 
 .fc-content{
     background-color: #fca311ff;
@@ -132,3 +114,24 @@ color: #14213dff;
       border-radius: 20%;
     }
 
+    /*--------------footer ----------*/
+
+       .fragment-footer {
+         margin-top: 5rem;
+         margin-bottom: 5rem;
+         background-color: #fca311ff;
+         text-align: center;
+         padding: 10px;
+         font-size: 1rem;
+         border-radius: 100px;
+         align-self: center;
+         bottom:0;
+         width:100%;
+         height:50px;
+         padding: 0;
+         }
+
+         .copyright-tag{
+         font-size: 15px;
+
+         }
