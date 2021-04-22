@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
+import java.util.List;
 
 @Controller
 public class MemberController {
@@ -32,6 +34,22 @@ public class MemberController {
 
     @Autowired
     AuthenticationManager authenticationManager;
+
+    @PostMapping("/deleteAllPoints")
+    public RedirectView deletePoints(Principal p){
+//        Member member = memberRepository.findByUsername(p.getName());
+//        List<Member> memberList = member.getFamilyIBelongTo().getMembers();
+        Member member = memberRepository.findByUsername(p.getName());
+        Family family = familyRepository.getOne(member.getFamilyIBelongTo().getId());
+        List<Member> rewardedFamily = family.getMembers();
+        for(Member memberWithPoints : rewardedFamily){
+            memberWithPoints.setRewardPoints(0);
+            System.out.println("FIRST NAME = " + memberWithPoints.getFirstName());
+            System.out.println("REWARD POINTS = " + memberWithPoints.getRewardPoints());
+            memberRepository.save(memberWithPoints);
+        }
+        return new RedirectView("/profile");
+    }
 
     @PostMapping("/newUser")
     public RedirectView createNewUser(String username, String password, String firstName,
