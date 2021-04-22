@@ -16,7 +16,7 @@
       border-collapse: collapse;*/
       font-size: 1.5rem;
       color:#14213dff;
-      background:#7596de;
+      background:#7c99d7;
   }
  /* One of these three changes the size of the date box */
  .fc-row .fc-week .fc-widget-content .fc-rigid{
@@ -37,6 +37,7 @@
     background-color: #fca311ff;
     color: #14213dff;
     height: 2rem;
+    border-radius: 30%;
 }
 
  /* Changes the calendar date*/
