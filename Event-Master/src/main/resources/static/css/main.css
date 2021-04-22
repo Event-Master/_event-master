@@ -11,11 +11,11 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-image: linear-gradient(to right, #e5e5e5ff, #ffffffff); }
+  background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff); }
 
 .heading {
   text-align: center;
-  background-image: linear-gradient(to right, #14213dff, #fca311ff);
+  background-image: linear-gradient(to right, #14213dff, #b2c1df);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -180,13 +180,6 @@ body {
   .section__tertiary--textB {
     justify-self: flex-start;
     flex: 1; }
-
-.fc-widget-content {
-  margin-bottom: 5rem;
-  height: 30rem; }
-
-.fc-scroller {
-  height: 800px !important; }
 
 .fragment-footer {
   margin-top: 5rem;
