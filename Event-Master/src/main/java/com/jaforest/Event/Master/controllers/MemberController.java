@@ -30,7 +30,6 @@ public class MemberController {
     @Autowired
     FamilyRepository familyRepository;
 
-
     @Autowired
     AuthenticationManager authenticationManager;
 

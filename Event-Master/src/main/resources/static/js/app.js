@@ -8,8 +8,7 @@ $.get("/calendarEvents").then( function(result){
 eventArray = result;
   console.log(result[0].title)
   }).catch(console.log);
-
-console.log(eventArray[0].title);
+//console.log(eventArray[0].title);
 
 $(document).ready(function() {
     calendar.fullCalendar({
@@ -23,84 +22,39 @@ $(document).ready(function() {
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         events: eventArray,
+//        plugins: [ dayGridPlugin, interactionPlugin ],
 //        events: [
 //            {
-//                title: eventArray[0].title,
-//                start: eventArray[0].date
+//                color: 'red',
+//                title: 'test event hardcoded',
+//                start: '2021-04-21',
+//                dow: [1, 2, 3, 4],
+//                startTime: '10:45:00',
+//                endTime: '12:45:00',
+////                startRecur: '2021-04-21',
+////                endRecur: '2021-04-28'
 //            },
 //            {
-//                title: 'Long Event',
-//                start: '2020-12-07',
-//                end: '2020-12-10'
-//            },
-//            {
-//                id: 999,
-//                title: 'Repeating Event',
-//                start: '2020-12-09T16:00:00'
-//            },
-//            {
-//                id: 999,
-//                title: 'Repeating Event',
-//                start: '2020-12-16T16:00:00'
-//            },
-//            {
-//                title: 'Conference',
-//                start: '2020-12-11',
-//                end: '2020-12-13'
-//            },
-//            {
-//                title: 'Meeting',
+//                title: 'start',
+//                start: '2021-04-25T20:15:00',
+//                end: '2021-04-27T20:30:00'
 //
-//                start: '2020-12-12T10:30:00',
-//                end: '2020-12-12T12:30:00'
-//            },
-//            {
-//                title: 'Lunch',
-//                start: '2020-12-12T12:00:00'
-//            },
-//            {
-//                title: 'Meeting',
-//                start: '2020-12-12T14:30:00'
-//            },
-//            {
-//                title: 'Happy Hour',
-//                start: '2020-12-12T17:30:00'
-//            },
-//            {
-//                title: 'Dinner',
-//                start: '2020-12-12T20:00:00'
-//            },
-//            {
-//                title: 'Birthday Party',
-//                start: '2020-12-13T07:00:00'
-//            },
-//            {
-//                title: 'Click for Google',
-//                url: 'https://google.com/',
-//                start: '2020-12-28'
-//            },
-//            {
-//                title: 'Christmas!',
-//                start: '2020-12-25',
-//                allDay: true
 //            }
 //        ]
     });
 
+   $('.dateField').hide();
+
+    $('#allDayCheckbox').change(function() {
+        if(!this.checked){
+                $('.dateField').hide();
+                $('.timeField').show();
+            }
+        else{
+               $('.dateField').show();
+               $('.timeField').hide();
+            }
+    });
 
 });
-//
-// calendar.addEvent({
-//    title: 'Add Event....',
-//    start: 2020-12-04,
-//    allDay: true
-//  });
-//  function displayCalendar(request, response) {
-//    const sqlStr = "SELECT * FROM events WHERE id=$1;";
-//    const sqlArr = ["default"];
-//
-//  }
-
-
-
 
