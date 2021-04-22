@@ -21,9 +21,6 @@
         <div class="col-1-of-3 col--2">
             <div class="section__primary_member-group--current" id="member-btn">
 
-                <!-- <ul>
-                    <li class="current--text" th:each="familyMember : ${member.familyIBelongTo.members} "th:text="'Name: ' + ${familyMember.firstName}">Bob</li>
-                </ul> -->
                 <button class=" btn btn--orange-member member-btn" >Add A Member</button>
 
             </div>
@@ -59,27 +56,12 @@
 
             <div class="section__primary">
                 <div class="row section__tertiary">
-                    <div class="section__tertiary col-1-of-3 col--2-col--3"> Col 1 of 2
+                    <div class="section__tertiary col-1-of-3 col--2-col--3">
+                        <h2 class="heading__primary">Current Events</h2>
                         <ul>
-                            <li>Clean room</li>
-                            <li>Clean garage</li>
-                            <li>Pick up toys</li>
-                            <li>Do homework</li>
-                            <li>Mow the lawn</li>
+                            <li th:replace="./fragments/familyEvents :: familyEvents"></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="row section__tertiary">
-                <div class="section__tertiary col-1-of-3 col--2-col--4">
-                    Col 1 of 2
-                    <ul>
-                        <li>Wash dishes</li>
-                        <li>pick up toys</li>
-                        <li>sweep the floor</li>
-                        <li>vacuum</li>
-                        <li>Play</li>
-                    </ul>
                 </div>
             </div>
             <div>

@@ -22,19 +22,6 @@
                 <a class="item" href="/profile" >Profile</a>
                 <a class="item" href="/aboutus" >About</a>
                 <a th:if="${member}"class="item" href="/logout" >Logout</a>
-                <div class="ui pointing dropdown link item">
-                    Group
-                    <i class="dropdown icon"></i>
-                    <span class="menu">
-                    <div class="item">Action</div>
-                    <div class="item">Another Action</div>
-                    <div class="item">Something else here</div>
-                    <div class="divider"></div>
-                    <div class="item">Separated Link</div>
-                    <div class="divider"></div>
-                    <div class="item">One more separated link</div>
-                  </span>
-                </div>
                 <div class="right menu">
                     <div class="item">
                         <div class="ui action left icon input">
@@ -43,7 +30,6 @@
                             <button class="ui button">Submit</button>
                         </div>
                     </div>
-                    <a class="item">Link </a>
                 </div>
             </div>
         </div>
@@ -52,7 +38,12 @@
                 <span class="heading--primary">
                     Welcome to the Event Master!
                 </span>
-                <span class="heading--secondary">Please sign in or create an account!</span>
+                <span th:if="${#httpServletRequest.requestURI == '/'}"
+                      class="heading--secondary">Please sign in or
+                    create an
+                    account!</span>
+                <span th:unless="${#httpServletRequest.requestURI == '/'}"
+                      class="heading--secondary"></span>
             </h1>
         </div>
     </header>

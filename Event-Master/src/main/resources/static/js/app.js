@@ -1,17 +1,12 @@
-var calendar = $('#calendar-main');
-
-var eventArray;
+$(document).ready(function() {
+var eventArray = [];
 $.get("/calendarEvents").then( function(result){
+    eventArray = result;
+    var calendar = $('#calendar-main');
   console.log("we got it to run");
   console.log(result);
-//  for(var i = 0; i < result.length; i++) eventArray.push(result[i]);
-eventArray = result;
   console.log(result[0].title)
-  }).catch(console.log);
-//console.log(eventArray[0].title);
-
-$(document).ready(function() {
-    calendar.fullCalendar({
+  calendar.fullCalendar({
         header: {
             left: 'prev,next, today',
             center: 'title',
@@ -21,8 +16,11 @@ $(document).ready(function() {
         navLinks: true, // can click day/week names to navigate views
         editable: true,
         eventLimit: true, // allow "more" link when too many events
-        events: eventArray,
-//        plugins: [ dayGridPlugin, interactionPlugin ],
+        events: eventArray
+        });
+    }).catch(console.log);
+//});
+
 //        events: [
 //            {
 //                color: 'red',
@@ -41,7 +39,6 @@ $(document).ready(function() {
 //
 //            }
 //        ]
-    });
 
    $('.dateField').hide();
 
@@ -55,6 +52,7 @@ $(document).ready(function() {
                $('.timeField').hide();
             }
     });
+
 
 });
 
