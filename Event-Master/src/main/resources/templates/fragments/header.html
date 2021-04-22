@@ -34,16 +34,22 @@
             </div>
         </div>
         <div class="form__heading">
-            <h1 class="heading">
+            <h1 th:if="${#httpServletRequest.requestURI == '/'}" class="heading">
                 <span class="heading--primary">
                     Welcome to the Event Master!
                 </span>
                 <span th:if="${#httpServletRequest.requestURI == '/'}"
-                      class="heading--secondary">Please sign in or
-                    create an
-                    account!</span>
-                <span th:unless="${#httpServletRequest.requestURI == '/'}"
-                      class="heading--secondary"></span>
+                      class="heading--secondary">Please sign in or create an account!
+                </span>
+            </h1>
+            <h1 th:if="${#httpServletRequest.requestURI == '/profile'}" class="heading">
+                <span class="heading--primary"
+                      th:text="${member.familyIBelongTo.familyName} + ' Family Stats'">
+                    Family Name
+                </span>
+                <span th:if="${#httpServletRequest.requestURI == '/'}"
+                      class="heading--secondary">Please sign in or create an account!
+                </span>
             </h1>
         </div>
     </header>
