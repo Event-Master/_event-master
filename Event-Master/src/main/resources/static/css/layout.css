@@ -125,14 +125,12 @@ color: #14213dff;
     }
 
        .fragment-footer {
-         margin-top: 50rem;
+        margin-top:25%;
          margin-bottom: 5rem;
-         background-color: #fca311ff;
          text-align: center;
-         padding: 10px;
+         justify-content: center;
          font-size: 1rem;
          border-radius: 100px;
-         align-self: center;
          bottom:0;
          width:100%;
          height:50px;
