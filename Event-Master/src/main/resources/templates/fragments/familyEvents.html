@@ -3,6 +3,6 @@
     <h2 class="" th:text="${event.title}">Lorem ipsum.</h2>
 
     <form th:action="'/deleteEvent/' + ${event.id} + '?_method=delete'" method="post">
-        <button>x</button>
+        <button class="btn btn--orange member-btn member-form--btn">x</button>
     </form>
 </li>

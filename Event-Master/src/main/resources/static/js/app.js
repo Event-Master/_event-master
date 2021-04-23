@@ -12,7 +12,8 @@ var EventCreator = function (title, startDay, endDay, color, reward, dow){
 $.get("/calendarEvents").then( function(result){
     if (!result.length == 0){
     for (i = 0 ; i < result.length; i++){
-        new EventCreator(result[i].title, result[i].startDay, result[i].endDay, result[i].color);
+        new EventCreator(result[i].title, result[i].startDay, result[i].endDay, result[i].color,
+        result[i].reward,result[i].dow);
     }}
     var calendar = $('#calendar-main');
 

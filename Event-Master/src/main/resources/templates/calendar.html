@@ -15,52 +15,70 @@
 </head>
 <body>
     <header th:replace="./fragments/header :: header"></header>
-
-    <h3 class="heading--primary">Add new Event</h3>
-    <form class="calendar-form" action="/newEvent" method="post">
-
-        <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Type your Event title here" required
-               name="title">
-
-        <label for="allDayCheckbox">All Day?</label>
-        <input id="allDayCheckbox"  type="checkbox"  name="allDay">
-
-        <label class="dateField input__label" for="startDate">Start DAY</label>
-        <input class="dateField" type="date" id="startDate" name="startDay">
-
-        <label class="dateField" for="endDate">End DAY</label>
-        <input class="dateField" type="date" id="endDate" name="endDay">
-
-        <label class="timeField" for="startTime">Start TIME</label>
-
-        <input class="timeField" type="datetime-local"   name="startDayTime">
-
-        <label class="timeField" for="endTime">End TIME</label>
-        <input class="timeField" type="datetime-local"  name="endDayTime">
-
-        <label for="color">COLOR</label>
-        <input type="color" value="#ff9900" name="color">
-
-        <label for="repeat">Repeat?</label>
-        <select name="dow" id="repeat">
-            <option>Never</option>
-            <option>Daily</option>
-            <option>Weekly</option>
-        </select>
-
-        <label for="reward">Reward Points</label>
-        <input type="number" min="0" max="5" id="reward" value="0" name="reward">
-
-        <label for="assignTo">Assign To:</label>
-        <select  name="assignTo" id="assignTo" >
-           <option value="Entire Family">Entire Family</option>
-           <option th:each="member: ${members}" th:value="${member.username}" th:text="${member.firstName}"></option>
-       </select>
-
-        <input class="calendar-button" type="submit" value="Add">
-    </form>
-
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__content--item">
+                <h3 class="heading--primary">Add new Event</h3>
+                <form action="/newEvent" method="post" class="form form__create-account">
+                    <div class="form__group">
+                        <label for="allDayCheckbox">All Day?</label>
+                        <input id="allDayCheckbox" type="checkbox"  name="allDay">
+                        <label for="color">
+                            <input type="color" id="color" value="#ff9900" name="color">
+                        </label>
+                        <input type="text" class="form__input form__input--event" id="title" placeholder="What do you need completed?"
+                               name="title" required>
+                        <label for="title" class="form__label">Description</label>
+                        <input type="number" class="form__input form__input--event" min="0" max="100" step="25" id="reward" placeholder="Reward Amount" name="reward">
+                        <label for="reward" class="form__label">Points</label>
+                    </div>
+                    <div class="form__group form__group-1" >
+                        <label class="dateField form__label--date form__label--date-1" for="startDate">
+                            <span class= "">Start Day</span>
+                            <input class="dateField form__input form__input--event"  type="date" id="startDate" name="startDay">
+                        </label>
+                        <label class="dateField form__label--date form__label--date-1" for="endDate">
+                            <span class= "">End Day</span>
+                            <input class="dateField form__input form__input--event"  type="date" id="endDate" name="endDay">
+                        </label>
+                    </div>
+                    <div class="form__group form__group-2">
+                        <label class="timeField form__label--date form__label--date-2" for="startTime">
+                            <span class= "">Start Time</span>
+                            <input class="timeField form__input form__input--event"
+                                   type="datetime-local" id="startTime" name="startDayTime">
+                        </label>
+                        <label class="timeField form__label--date form__label--date-2" for="endTime">
+                            <span class= "">End Time</span>
+                            <input class="timeField form__input form__input--event"
+                                   type="datetime-local" id="endTime" name="endDayTime" >
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <select class="form__input form__input--event" name="assignTo" id="assignTo" >
+                            <option value="" disabled selected>Select a member</option>
+                            <option value="Entire Family">Entire Family</option>
+                            <option th:each="member: ${members}" th:value="${member.username}" th:text="${member.firstName}"></option>
+                        </select>
+                        <select class="form__input form__input--event" name="dow" id="repeat">
+                            <option value="" disabled selected>Frequency</option>
+                            <option class="form__input form__input--event">Never</option>
+                            <option class="form__input form__input--event">Daily</option>
+                            <option class="form__input form__input--event">Weekly</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <button class="btn btn--orange btn--event" id="add-event-btn"
+                                type="submit">Add a
+                            member</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div >
+        <button class="btn btn--orange" id="event-btn">Add Event</button>
+    </div>
     <div class="ui container">
         <div class="ui grid">
             <div class="ui sixteen column">
@@ -71,5 +89,6 @@
 
     <footer th:replace="./fragments/footer :: footer"></footer>
     <script src="/js/app.js"></script>
+    <script src="/js/calendar.js"></script>
 </body>
 </html>
