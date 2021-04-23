@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/Matt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/img/barrett.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/controllers/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/model/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/java/com/jaforest/Event/Master/model/event/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/familyEvents.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/familyEvents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/fragments/member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/src/test/java/com/jaforest/Event/Master/EventMasterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/test/java/com/jaforest/Event/Master/EventMasterApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Event-Master/target/test-classes/com/jaforest/Event/Master/EventMasterApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/test-classes/com/jaforest/Event/Master/EventMasterApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

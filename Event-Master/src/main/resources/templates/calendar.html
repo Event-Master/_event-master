@@ -23,19 +23,20 @@
                     <div class="form__group">
                         <label for="allDayCheckbox">All Day?</label>
                         <input id="allDayCheckbox" type="checkbox"  name="allDay">
+                        <label for="color">
+                            <input type="color" id="color" value="#ff9900" name="color">
+                        </label>
                         <input type="text" class="form__input form__input--event" id="title" placeholder="What do you need completed?"
                                name="title" required>
-                        <label for="title" class="form__label">Title</label>
+                        <label for="title" class="form__label">Description</label>
                         <input type="number" class="form__input form__input--event" min="0" max="100" step="25" id="reward" placeholder="Reward Amount" name="reward">
                         <label for="reward" class="form__label">Points</label>
                     </div>
                     <div class="form__group form__group-1" >
-
                         <label class="dateField form__label--date form__label--date-1" for="startDate">
                             <span class= "">Start Day</span>
                             <input class="dateField form__input form__input--event"  type="date" id="startDate" name="startDay">
                         </label>
-
                         <label class="dateField form__label--date form__label--date-1" for="endDate">
                             <span class= "">End Day</span>
                             <input class="dateField form__input form__input--event"  type="date" id="endDate" name="endDay">
@@ -44,11 +45,13 @@
                     <div class="form__group form__group-2">
                         <label class="timeField form__label--date form__label--date-2" for="startTime">
                             <span class= "">Start Time</span>
-                            <input class="timeField form__input form__input--event" type="datetime-local" id="startTime" name="startDay">
+                            <input class="timeField form__input form__input--event"
+                                   type="datetime-local" id="startTime" name="startDayTime">
                         </label>
                         <label class="timeField form__label--date form__label--date-2" for="endTime">
                             <span class= "">End Time</span>
-                            <input class="timeField form__input form__input--event" type="datetime-local" id="endTime" name="endDay" >
+                            <input class="timeField form__input form__input--event"
+                                   type="datetime-local" id="endTime" name="endDayTime" >
                         </label>
                     </div>
                     <div class="form__group">

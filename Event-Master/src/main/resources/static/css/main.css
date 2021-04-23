@@ -155,7 +155,7 @@ body {
   visibility: visible; }
   .popup__content {
     width: 35%;
-    height: 49vh;
+    height: 50vh;
     background-image: linear-gradient(to right, #8fa8de, #e5e5e5ff);
     top: 50%;
     left: 50%;
@@ -263,6 +263,7 @@ body {
   .section__tertiary--textB {
     flex: 1; }
 
+<<<<<<< HEAD
 .fc-widget-content {
   margin-bottom: 5rem;
   height: 30rem; }
@@ -278,3 +279,5 @@ body {
   padding: 20px;
   font-size: 20px;
   border-radius: 100px; }
+=======
+>>>>>>> afcba94ba4c154d7026947c23c9fe7c4ec5d142a

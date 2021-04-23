@@ -1,6 +1,46 @@
+/*-------------Calendar Page------------*/
+.calendar-h3{
+font-size: 40px;
+font-weight: bold;
+}
+
+.calendar-form{
+    border-color: #14213dff;
+     border-width: 5rem;
+    color: #14213dff;
+    background-color: #6188dc;
+    font-weight: bold;
+}
+
+.calendar-button {
+    padding: 0.3rem;
+}
+
+.fc-toolbar .fc-header-toolbar {
+ color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
+.fc-head {
+ color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
+.fc-day-header .fc-widget-header .fc-wed {
+color: #14213dff;
+ font-weight: bold;
+ background-color: #6188dc;
+}
+
 /* Changes the calendar size*/
 .fc-widget-content {
+  -webkit-margin-bottom: 4rem;
+  -moz-margin-bottom: 4rem;
   margin-bottom: 4rem;
+  -webkit-height: 7.5rem;
+  -moz- height: 7.5rem;
   height: 7.5rem; }
 
 .fc-scroller {
@@ -9,27 +49,18 @@
 /* Changes the calendar content*/
   .fc-view-container {
       width: 100% !important;
-
-     /*
-      box-sizing: border-box;
-      border-spacing: 0;
-      border-collapse: collapse;*/
+     border-collapse: collapse;
       font-size: 1.5rem;
       color:#14213dff;
-      background:#7596de;
+      background:#819cd7;
   }
  /* One of these three changes the size of the date box */
- .fc-row .fc-week .fc-widget-content .fc-rigid{
-    height: 20rem;
+ .fc-basic-view .fc-body .fc-row {
+    -webkit-min-height: 7em;
+    -moz-min-height: 7em;
+     min-height: 7em;
  }
 
- .fc-bg{
-    height: 10rem;
- }
-
- .fc-content-skeleton{
-    height: 10rem;
- }
 
  /* Changes the calendar events*/
 
@@ -37,6 +68,7 @@
     background-color: #fca311ff;
     color: #14213dff;
     height: 2rem;
+    border-radius: 10%;
 }
 
  /* Changes the calendar date*/
@@ -48,3 +80,58 @@
 .fc-more {
     color:#14213dff;
 }
+
+/* ---------------------About Us----------------------*/
+.about-h2{
+      font-size: 40px;
+    }
+    .aboutus{
+      display: flex;
+      margin-bottom: 150px;
+      margin: 100;
+      height: 25vh;
+      justify-content: space-between;
+    }
+
+    .aboutus-message {
+     font-size: 18px;
+    }
+
+    .about-img{
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+    }
+
+    .about-info {
+      /* margin-left: 100px;*/
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 10px;
+      font-size: 18px;
+      padding: 50px;
+      background-color: #7596de;
+      border-radius: 20%;
+    }
+
+    /*--------------footer ----------*/
+
+       .fragment-footer {
+         margin-top: 5rem;
+         margin-bottom: 5rem;
+         background-color: #fca311ff;
+         text-align: center;
+         padding: 10px;
+         font-size: 1rem;
+         border-radius: 100px;
+         align-self: center;
+         bottom:0;
+         width:100%;
+         height:50px;
+         padding: 0;
+         }
+
+         .copyright-tag{
+         font-size: 15px;
+
+         }

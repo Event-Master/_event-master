@@ -1,10 +1,19 @@
 package com.jaforest.Event.Master;
 
+import com.jaforest.Event.Master.model.event.Event;
+import com.jaforest.Event.Master.model.family.Family;
+import com.jaforest.Event.Master.model.member.Member;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -26,13 +35,78 @@ class EventMasterApplicationTests {
 	}
 
 	@Test
-	public void testGettersAndSetters() {
-
+	public void testGettersAndSettersMember() {
+		Member member = new Member();
+		assertEquals("",member.getPassword());
+		assertEquals("", member.getUsername());
+		assertEquals("",member.getFirstName());
+		assertEquals("",member.getLastName());
+		assertEquals("",member.getRole());
+		assertEquals("",member.getFamilyIBelongTo());
 	}
 
 	@Test
-	public void testGetRequestEndpoints() {
+	public void testGetterAndSettersFamily() {
+		Family family = new Family();
+		assertEquals("", family.getFamilyName());
+	}
 
+	@Test
+	public void testGetterAndSettersEvent() {
+		Event event = new Event();
+		assertEquals("", event.getTitle());
+		assertEquals("", event.getStartDay());
+		assertEquals("", event.getStartDay());
+		assertEquals("", event.getFamilyEventsIBelongTo());
+	}
+
+
+	@Test
+	public void testGetRequestEndpointsHome() throws IOException {
+		URL url = new URL("http://localhost:8080");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080", url);
+	}
+
+	@Test
+	public void testGetRequestEndpointsLogin() throws IOException {
+		URL url = new URL("http://localhost:8080/login");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080/login", url);
+	}
+
+	@Test
+	public void testGetRequestEndpointsSignup() throws IOException {
+		URL url = new URL("http://localhost:8080/signup");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080/signup", url);
+	}
+
+	@Test
+	public void testGetRequestEndpointsCalendar() throws IOException {
+		URL url = new URL("http://localhost:8080/calendar");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080/calendar", url);
+	}
+
+	@Test
+	public void testGetRequestEndpointsProfile() throws IOException {
+		URL url = new URL("http://localhost:8080/profile");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080/profile", url);
+	}
+
+	@Test
+	public void testGetRequestEndpointsAbout() throws IOException {
+		URL url = new URL("http://localhost:8080/aboutus");
+		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		System.out.println(http.getResponseCode() + "" + http.getResponseMessage());
+		assertEquals("http://localhost:8080/aboutus", url);
 	}
 
 	@Test
