@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa66bb1-259a-487e-adc3-5041ca33db89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/static/css/layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/src/main/resources/templates/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Event-Master/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
