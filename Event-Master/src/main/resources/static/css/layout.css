@@ -115,9 +115,17 @@ color: #14213dff;
     }
 
     /*--------------footer ----------*/
+    #page-container {
+    position: relative;
+    min-height: 100vh;
+    }
+
+    #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+    }
 
        .fragment-footer {
-         margin-top: 5rem;
+         margin-top: 50rem;
          margin-bottom: 5rem;
          background-color: #fca311ff;
          text-align: center;
